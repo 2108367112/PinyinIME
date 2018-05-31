@@ -1,0 +1,26 @@
+{
+    "logs": [
+        {
+            "outputFile": "C:\\Users\\linboqiang\\Desktop\\pinyin\\pinyinIME\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-port\\values-port.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\linboqiang\\Desktop\\pinyin\\pinyinIME\\src\\main\\res\\values-port\\dimens.xml",
+                    "from": {
+                        "startLines": "16,17",
+                        "startColumns": "4,4",
+                        "startOffsets": "702,762",
+                        "endColumns": "58,48",
+                        "endOffsets": "756,806"
+                    },
+                    "to": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,114",
+                        "endColumns": "58,48",
+                        "endOffsets": "109,158"
+                    }
+                }
+            ]
+        }
+    ]
+}

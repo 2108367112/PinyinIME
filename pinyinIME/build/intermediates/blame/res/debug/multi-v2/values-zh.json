@@ -1,0 +1,26 @@
+{
+    "logs": [
+        {
+            "outputFile": "C:\\Users\\linboqiang\\Desktop\\pinyin\\pinyinIME\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-zh\\values-zh.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\linboqiang\\Desktop\\pinyin\\pinyinIME\\src\\main\\res\\values-zh\\bools.xml",
+                    "from": {
+                        "startLines": "16",
+                        "startColumns": "2",
+                        "startOffsets": "700",
+                        "endColumns": "40",
+                        "endOffsets": "738"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "42",
+                        "endOffsets": "93"
+                    }
+                }
+            ]
+        }
+    ]
+}

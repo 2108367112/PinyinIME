@@ -1,0 +1,126 @@
+{
+    "logs": [
+        {
+            "outputFile": "C:\\Users\\linboqiang\\Desktop\\pinyin\\pinyinIME\\build\\intermediates\\res\\merged\\debug\\values-zh_values-zh.arsc.flat",
+            "map": [
+                {
+                    "source": "C:\\Users\\linboqiang\\Desktop\\pinyin\\pinyinIME\\src\\main\\res\\values-zh\\bools.xml",
+                    "from": {
+                        "startLines": "16",
+                        "startColumns": "2",
+                        "startOffsets": "700",
+                        "endColumns": "40",
+                        "endOffsets": "738"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "42",
+                        "endOffsets": "93"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "C:\\Users\\linboqiang\\Desktop\\pinyin\\pinyinIME\\build\\intermediates\\res\\merged\\debug\\values-land_values-land.arsc.flat",
+            "map": [
+                {
+                    "source": "C:\\Users\\linboqiang\\Desktop\\pinyin\\pinyinIME\\src\\main\\res\\values-land\\dimens.xml",
+                    "from": {
+                        "startLines": "16,17",
+                        "startColumns": "4,4",
+                        "startOffsets": "702,763",
+                        "endColumns": "59,48",
+                        "endOffsets": "757,807"
+                    },
+                    "to": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,115",
+                        "endColumns": "59,48",
+                        "endOffsets": "110,159"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "C:\\Users\\linboqiang\\Desktop\\pinyin\\pinyinIME\\build\\intermediates\\res\\merged\\debug\\values-port_values-port.arsc.flat",
+            "map": [
+                {
+                    "source": "C:\\Users\\linboqiang\\Desktop\\pinyin\\pinyinIME\\src\\main\\res\\values-port\\dimens.xml",
+                    "from": {
+                        "startLines": "16,17",
+                        "startColumns": "4,4",
+                        "startOffsets": "702,762",
+                        "endColumns": "58,48",
+                        "endOffsets": "756,806"
+                    },
+                    "to": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,114",
+                        "endColumns": "58,48",
+                        "endOffsets": "109,158"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "C:\\Users\\linboqiang\\Desktop\\pinyin\\pinyinIME\\build\\intermediates\\res\\merged\\debug\\values_values.arsc.flat",
+            "map": [
+                {
+                    "source": "C:\\Users\\linboqiang\\Desktop\\pinyin\\pinyinIME\\src\\main\\res\\values\\strings.xml",
+                    "from": {
+                        "startLines": "16,17,47,45,55,54,57,58,43,50,41,48,44,52,51,42,49,22,23,24,26,27,25,33,29,32,30,31,38,34,37,35,36,28,19",
+                        "startColumns": "4,4,1,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "754,800,2230,2160,2630,2582,2681,2730,2018,2391,1884,2277,2093,2506,2450,1949,2335,1043,1084,1130,1224,1270,1177,1558,1361,1508,1408,1459,1803,1608,1747,1654,1700,1316,942",
+                        "endColumns": "44,64,42,69,47,46,47,56,73,57,63,56,65,72,54,67,54,39,44,45,44,44,45,48,45,48,49,47,46,44,54,44,45,43,41",
+                        "endOffsets": "794,860,2271,2225,2673,2624,2724,2782,2087,2444,1943,2329,2154,2574,2500,2012,2385,1078,1124,1171,1264,1310,1218,1602,1402,1552,1453,1502,1845,1648,1797,1694,1741,1355,979"
+                    },
+                    "to": {
+                        "startLines": "13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "654,699,764,810,880,928,975,1023,1080,1154,1212,1276,1333,1399,1472,1527,1595,1650,1690,1735,1781,1826,1871,1917,1966,2012,2061,2111,2159,2206,2251,2306,2351,2397,2441",
+                        "endColumns": "44,64,45,69,47,46,47,56,73,57,63,56,65,72,54,67,54,39,44,45,44,44,45,48,45,48,49,47,46,44,54,44,45,43,41",
+                        "endOffsets": "694,759,805,875,923,970,1018,1075,1149,1207,1271,1328,1394,1467,1522,1590,1645,1685,1730,1776,1821,1866,1912,1961,2007,2056,2106,2154,2201,2246,2301,2346,2392,2436,2478"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\linboqiang\\Desktop\\pinyin\\pinyinIME\\src\\main\\res\\values\\dimens.xml",
+                    "from": {
+                        "startLines": "16",
+                        "startColumns": "2",
+                        "startOffsets": "700",
+                        "endColumns": "56",
+                        "endOffsets": "754"
+                    },
+                    "to": {
+                        "startLines": "12",
+                        "startColumns": "4",
+                        "startOffsets": "595",
+                        "endColumns": "58",
+                        "endOffsets": "649"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\linboqiang\\Desktop\\pinyin\\pinyinIME\\src\\main\\res\\values\\colors.xml",
+                    "from": {
+                        "startLines": "20,18,19,23,24,25,22,16,17,21",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "908,804,855,1085,1138,1194,1033,702,751,968",
+                        "endColumns": "58,49,51,51,54,56,50,47,51,63",
+                        "endOffsets": "962,849,902,1132,1188,1246,1079,745,798,1027"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,114,164,216,268,323,380,431,479,531",
+                        "endColumns": "58,49,51,51,54,56,50,47,51,63",
+                        "endOffsets": "109,159,211,263,318,375,426,474,526,590"
+                    }
+                }
+            ]
+        }
+    ]
+}
