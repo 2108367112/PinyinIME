@@ -52,4 +52,5 @@ preBuild {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 //    provided files('libs/framework.jar')
+    implementation 'com.android.support.constraint:constraint-layout:1.1.1'
 }

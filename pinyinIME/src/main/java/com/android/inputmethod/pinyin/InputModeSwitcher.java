@@ -19,7 +19,6 @@ package com.android.inputmethod.pinyin;
 import com.android.inputmethod.pinyin.SoftKeyboard.KeyRow;
 
 import android.content.res.Resources;
-import android.util.Log;
 import android.view.inputmethod.EditorInfo;
 
 /**

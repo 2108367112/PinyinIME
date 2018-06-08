@@ -2,26 +2,27 @@
 <instant-run
     abi="armeabi-v7a,armeabi"
     api-level="22"
-    build-mode="FULL"
+    build-mode="COLD"
     density="xhdpi"
     format="10"
+    ir-eligibility="COMPATIBLE"
     plugin-version="3.0.1"
-    timestamp="1527751539041"
+    timestamp="1528358757457"
     token="9199540282624322615"
-    verifier="FULL_BUILD_REQUESTED" >
+    verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="3580" />
+        duration="319" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="314" />
+        duration="25" />
     <task
         name="verifier"
-        duration="222" />
+        duration="3" />
 
     <artifact
         location="C:\Users\linboqiang\Desktop\pinyin\pinyinIME\build\intermediates\split-apk\debug\slices\slice_6.apk"
@@ -29,49 +30,16 @@
     <artifact
         location="C:\Users\linboqiang\Desktop\pinyin\pinyinIME\build\outputs\apk\debug\pinyinIME-debug.apk"
         type="SPLIT_MAIN" />
-    <artifact
-        location="C:\Users\linboqiang\Desktop\pinyin\pinyinIME\build\intermediates\split-apk\debug\slices\slice_1.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\linboqiang\Desktop\pinyin\pinyinIME\build\intermediates\split-apk\debug\slices\slice_7.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\linboqiang\Desktop\pinyin\pinyinIME\build\intermediates\split-apk\debug\dep\dependencies.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\linboqiang\Desktop\pinyin\pinyinIME\build\intermediates\split-apk\debug\slices\slice_2.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\linboqiang\Desktop\pinyin\pinyinIME\build\intermediates\split-apk\debug\slices\slice_0.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\linboqiang\Desktop\pinyin\pinyinIME\build\intermediates\split-apk\debug\slices\slice_3.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\linboqiang\Desktop\pinyin\pinyinIME\build\intermediates\split-apk\debug\slices\slice_4.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\linboqiang\Desktop\pinyin\pinyinIME\build\intermediates\split-apk\debug\slices\slice_5.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\linboqiang\Desktop\pinyin\pinyinIME\build\intermediates\split-apk\debug\slices\slice_8.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\linboqiang\Desktop\pinyin\pinyinIME\build\intermediates\split-apk\debug\slices\slice_9.apk"
-        type="SPLIT" />
 
     <build
         build-mode="FULL"
-        timestamp="1527751539041"
+        timestamp="1528336441565"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
-            location="C:\Users\linboqiang\Desktop\pinyin\pinyinIME\build\intermediates\split-apk\debug\slices\slice_6.apk"
+            location="C:\Users\linboqiang\Desktop\pinyin\pinyinIME\build\intermediates\split-apk\debug\slices\slice_1.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\linboqiang\Desktop\pinyin\pinyinIME\build\outputs\apk\debug\pinyinIME-debug.apk"
-            type="SPLIT_MAIN" />
-        <artifact
-            location="C:\Users\linboqiang\Desktop\pinyin\pinyinIME\build\intermediates\split-apk\debug\slices\slice_1.apk"
+            location="C:\Users\linboqiang\Desktop\pinyin\pinyinIME\build\intermediates\split-apk\debug\slices\slice_6.apk"
             type="SPLIT" />
         <artifact
             location="C:\Users\linboqiang\Desktop\pinyin\pinyinIME\build\intermediates\split-apk\debug\slices\slice_7.apk"
@@ -100,6 +68,39 @@
         <artifact
             location="C:\Users\linboqiang\Desktop\pinyin\pinyinIME\build\intermediates\split-apk\debug\slices\slice_9.apk"
             type="SPLIT" />
+        <artifact
+            location="C:\Users\linboqiang\Desktop\pinyin\pinyinIME\build\outputs\apk\debug\pinyinIME-debug.apk"
+            type="SPLIT_MAIN" />
+    </build>
+    <build
+        build-mode="COLD"
+        ir-eligibility="COMPATIBLE"
+        timestamp="1528340864212"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="C:\Users\linboqiang\Desktop\pinyin\pinyinIME\build\intermediates\split-apk\debug\slices\slice_7.apk"
+            type="SPLIT" />
+    </build>
+    <build
+        build-mode="COLD"
+        ir-eligibility="FIELD_ADDED"
+        timestamp="1528358348689"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="C:\Users\linboqiang\Desktop\pinyin\pinyinIME\build\outputs\apk\debug\pinyinIME-debug.apk"
+            type="SPLIT_MAIN" />
+    </build>
+    <build
+        build-mode="COLD"
+        ir-eligibility="COMPATIBLE"
+        timestamp="1528358757457"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="C:\Users\linboqiang\Desktop\pinyin\pinyinIME\build\intermediates\split-apk\debug\slices\slice_6.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\linboqiang\Desktop\pinyin\pinyinIME\build\outputs\apk\debug\pinyinIME-debug.apk"
+            type="SPLIT_MAIN" />
     </build>
 
 </instant-run>

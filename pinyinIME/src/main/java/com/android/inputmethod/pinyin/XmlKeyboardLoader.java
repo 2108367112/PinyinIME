@@ -22,6 +22,7 @@ import android.content.Context;
 import android.content.res.Resources;
 import android.content.res.XmlResourceParser;
 import android.graphics.drawable.Drawable;
+import android.util.Log;
 
 import java.io.IOException;
 import java.util.regex.Pattern;
@@ -31,13 +32,14 @@ import org.xmlpull.v1.XmlPullParserException;
 /**
  * Class used to load a soft keyboard or a soft keyboard template from xml
  * files.
- *
+ * <p>
  * 类，用于从XML文件加载软键盘或软键盘模板。
- *
  */
 
 // 注意看方法的修饰符，只有两个方法是public的，其他都是私有方法。
 public class XmlKeyboardLoader {
+    private static final String TAG = "XmlKeyboardLoader";
+
     /**
      * The tag used to define an xml-based soft keyboard template.
      */
@@ -156,13 +158,19 @@ public class XmlKeyboardLoader {
      */
     private static final String XMLATTR_ROW_ID = "row_id";
 
-    /** The tag used to indicate the keyboard element in the xml file. */
+    /**
+     * The tag used to indicate the keyboard element in the xml file.
+     */
     private static final String XMLTAG_KEYBOARD = "keyboard";
 
-    /** The tag used to indicate the row element in the xml file. */
+    /**
+     * The tag used to indicate the row element in the xml file.
+     */
     private static final String XMLTAG_ROW = "row";
 
-    /** The tag used to indicate key-array element in the xml file. */
+    /**
+     * The tag used to indicate key-array element in the xml file.
+     */
     private static final String XMLTAG_KEYS = "keys";
 
     /**
@@ -172,7 +180,9 @@ public class XmlKeyboardLoader {
      */
     private static final String XMLTAG_KEY = "key";
 
-    /** The tag used to indicate a key's toggle element in the xml file. */
+    /**
+     * The tag used to indicate a key's toggle element in the xml file.
+     */
     private static final String XMLTAG_TOGGLE_STATE = "toggle_state";
 
     /**
@@ -181,7 +191,9 @@ public class XmlKeyboardLoader {
      */
     private static final String XMLATTR_TOGGLE_STATE_ID = "state_id";
 
-    /** Attribute tag of key template for the soft keyboard. */
+    /**
+     * Attribute tag of key template for the soft keyboard.
+     */
     private static final String XMLATTR_SKB_TEMPLATE = "skb_template";
 
     /**
@@ -200,7 +212,9 @@ public class XmlKeyboardLoader {
      */
     private static final String XMLATTR_SKB_STICKY_FLAG = "skb_sticky_flag";
 
-    /** Attribute tag to indicate whether it is a QWERTY soft keyboard. */
+    /**
+     * Attribute tag to indicate whether it is a QWERTY soft keyboard.
+     */
     private static final String XMLATTR_QWERTY = "qwerty";
 
     /**
@@ -209,43 +223,69 @@ public class XmlKeyboardLoader {
      */
     private static final String XMLATTR_QWERTY_UPPERCASE = "qwerty_uppercase";
 
-    /** Attribute tag of key type. */
+    /**
+     * Attribute tag of key type.
+     */
     private static final String XMLATTR_KEY_TYPE = "key_type";
 
-    /** Attribute tag of key width. */
+    /**
+     * Attribute tag of key width.
+     */
     private static final String XMLATTR_KEY_WIDTH = "width";
 
-    /** Attribute tag of key height. */
+    /**
+     * Attribute tag of key height.
+     */
     private static final String XMLATTR_KEY_HEIGHT = "height";
 
-    /** Attribute tag of the key's repeating ability. */
+    /**
+     * Attribute tag of the key's repeating ability.
+     */
     private static final String XMLATTR_KEY_REPEAT = "repeat";
 
-    /** Attribute tag of the key's behavior for balloon. */
+    /**
+     * Attribute tag of the key's behavior for balloon.
+     */
     private static final String XMLATTR_KEY_BALLOON = "balloon";
 
-    /** Attribute tag of the key splitter in a key array. */
+    /**
+     * Attribute tag of the key splitter in a key array.
+     */
     private static final String XMLATTR_KEY_SPLITTER = "splitter";
 
-    /** Attribute tag of the key labels in a key array. */
+    /**
+     * Attribute tag of the key labels in a key array.
+     */
     private static final String XMLATTR_KEY_LABELS = "labels";
 
-    /** Attribute tag of the key codes in a key array. */
+    /**
+     * Attribute tag of the key codes in a key array.
+     */
     private static final String XMLATTR_KEY_CODES = "codes";
 
-    /** Attribute tag of the key label in a key. */
+    /**
+     * Attribute tag of the key label in a key.
+     */
     private static final String XMLATTR_KEY_LABEL = "label";
 
-    /** Attribute tag of the key code in a key. */
+    /**
+     * Attribute tag of the key code in a key.
+     */
     private static final String XMLATTR_KEY_CODE = "code";
 
-    /** Attribute tag of the key icon in a key. */
+    /**
+     * Attribute tag of the key icon in a key.
+     */
     private static final String XMLATTR_KEY_ICON = "icon";
 
-    /** Attribute tag of the key's popup icon in a key. */
+    /**
+     * Attribute tag of the key's popup icon in a key.
+     */
     private static final String XMLATTR_KEY_ICON_POPUP = "icon_popup";
 
-    /** The id for a mini popup soft keyboard. */
+    /**
+     * The id for a mini popup soft keyboard.
+     */
     private static final String XMLATTR_KEY_POPUP_SKBID = "popup_skb";
 
     private static boolean DEFAULT_SKB_CACHE_FLAG = true;
@@ -262,7 +302,9 @@ public class XmlKeyboardLoader {
 
     private Resources mResources;
 
-    /** The event type in parsing the xml file. */
+    /**
+     * The event type in parsing the xml file.
+     */
     private int mXmlEventType;
 
     /**
@@ -271,22 +313,34 @@ public class XmlKeyboardLoader {
      **/
     private SkbTemplate mSkbTemplate;
 
-    /** The x position for the next key. */
+    /**
+     * The x position for the next key.
+     */
     float mKeyXPos;
 
-    /** The y position for the next key. */
+    /**
+     * The y position for the next key.
+     */
     float mKeyYPos;
 
-    /** The width of the keyboard to load. */
+    /**
+     * The width of the keyboard to load.
+     */
     int mSkbWidth;
 
-    /** The height of the keyboard to load. */
+    /**
+     * The height of the keyboard to load.
+     */
     int mSkbHeight;
 
-    /** Key margin in x-way. */
+    /**
+     * Key margin in x-way.
+     */
     float mKeyXMargin = 0;
 
-    /** Key margin in y-way. */
+    /**
+     * Key margin in y-way.
+     */
     float mKeyYMargin = 0;
 
     /**
@@ -296,7 +350,7 @@ public class XmlKeyboardLoader {
     boolean mNextEventFetched = false;
 
     String mAttrTmp;
-
+    //common 译文：共性
     class KeyCommonAttributes {
         XmlResourceParser mXrp;
         int keyType;
@@ -329,6 +383,7 @@ public class XmlKeyboardLoader {
         mResources = mContext.getResources();
     }
 
+    //SkbTemplate布局加载
     public SkbTemplate loadSkbTemplate(int resourceId) {
         if (null == mContext || 0 == resourceId) {
             return null;
@@ -338,6 +393,8 @@ public class XmlKeyboardLoader {
 
         KeyCommonAttributes attrDef = new KeyCommonAttributes(xrp);
         KeyCommonAttributes attrKey = new KeyCommonAttributes(xrp);
+        //有点蒙，基于同一个对象，构造的两个对象属性不一样？
+        Log.d(TAG, "loadSkbTemplate: 两个对象是否相等："+((attrDef==attrKey)?true:false));
 
         mSkbTemplate = new SkbTemplate(resourceId);
         int lastKeyTypeId = KEYTYPE_ID_LAST;
@@ -349,19 +406,23 @@ public class XmlKeyboardLoader {
             while (mXmlEventType != XmlResourceParser.END_DOCUMENT) {
                 mNextEventFetched = false;
                 if (mXmlEventType == XmlResourceParser.START_TAG) {
+                    //开始
                     String attribute = xrp.getName();
                     if (XMLTAG_SKB_TEMPLATE.compareTo(attribute) == 0) {
-                        Drawable skbBg = getDrawable(xrp, XMLATTR_SKB_BG, null);
+                        //skb_template标签
+                        Drawable skbBg = getDrawable(xrp, XMLATTR_SKB_BG, null);//键盘背景
                         Drawable balloonBg = getDrawable(xrp,
-                                XMLATTR_BALLOON_BG, null);
+                                XMLATTR_BALLOON_BG, null);//气泡背景
                         Drawable popupBg = getDrawable(xrp, XMLATTR_POPUP_BG,
-                                null);
+                                null);//弹出背景
+                        //三个背景中，任意一个为空，则退出。
                         if (null == skbBg || null == balloonBg
                                 || null == popupBg) {
                             return null;
                         }
+                        //设置样板的参数
                         mSkbTemplate.setBackgrounds(skbBg, balloonBg, popupBg);
-
+                        //设置按键间距
                         float xMargin = getFloat(xrp, XMLATTR_KEY_XMARGIN, 0);
                         float yMargin = getFloat(xrp, XMLATTR_KEY_YMARGIN, 0);
                         mSkbTemplate.setMargins(xMargin, yMargin);
@@ -373,6 +434,8 @@ public class XmlKeyboardLoader {
                         globalColorBalloon = getColor(xrp,
                                 XMLATTR_COLOR_BALLOON, 0xffffffff);
                     } else if (XMLTAG_KEYTYPE.compareTo(attribute) == 0) {
+                        //key_type标签
+                        //key_type 会存在6个参数
                         int id = getInteger(xrp, XMLATTR_ID, KEYTYPE_ID_LAST);
                         Drawable bg = getDrawable(xrp, XMLATTR_KEYTYPE_BG, null);
                         Drawable hlBg = getDrawable(xrp, XMLATTR_KEYTYPE_HLBG,
@@ -382,6 +445,7 @@ public class XmlKeyboardLoader {
                                 globalColorHl);
                         int colorBalloon = getColor(xrp, XMLATTR_COLOR_BALLOON,
                                 globalColorBalloon);
+                        //保证key_type id的不重复
                         if (id != lastKeyTypeId + 1) {
                             return null;
                         }
@@ -393,6 +457,8 @@ public class XmlKeyboardLoader {
                         }
                         lastKeyTypeId = id;
                     } else if (XMLTAG_KEYICON.compareTo(attribute) == 0) {
+                        //key_icon标签
+                        //key_icon 有三个参数，key_icon应该是表示某一类的图标。keyCode是什么意义？
                         int keyCode = getInteger(xrp, XMLATTR_KEY_CODE, 0);
                         Drawable icon = getDrawable(xrp, XMLATTR_KEY_ICON, null);
                         Drawable iconPopup = getDrawable(xrp,
@@ -402,23 +468,25 @@ public class XmlKeyboardLoader {
                                     iconPopup);
                         }
                     } else if (XMLTAG_KEY.compareTo(attribute) == 0) {
+                        //key标签
                         int keyId = this.getInteger(xrp, XMLATTR_ID, -1);
                         if (-1 == keyId) return null;
 
                         if (!attrKey.getAttributes(attrDef)) {
                             return null;
+                            //什么意思？attrKey 很明显等于 attrDef 吧
                         }
 
                         // Update the key position for the key.
                         mKeyXPos = getFloat(xrp, XMLATTR_START_POS_X, 0);
                         mKeyYPos = getFloat(xrp, XMLATTR_START_POS_Y, 0);
 
-                        SoftKey softKey = getSoftKey(xrp, attrKey);
+                        SoftKey softKey = getSoftKey(xrp, attrKey);//包装出一个softKey对象
                         if (null == softKey) return null;
                         mSkbTemplate.addDefaultKey(keyId, softKey);
                     }
                 }
-                // Get the next tag.
+                // Get the next tag.下一个标签
                 if (!mNextEventFetched) mXmlEventType = xrp.next();
             }
             xrp.close();
@@ -434,15 +502,15 @@ public class XmlKeyboardLoader {
     public SoftKeyboard loadKeyboard(int resourceId, int skbWidth, int skbHeight) {
         if (null == mContext) return null;
         Resources r = mResources;
-        SkbPool skbPool = SkbPool.getInstance();
+        SkbPool skbPool = SkbPool.getInstance();//获取SkbPool池
         XmlResourceParser xrp = mContext.getResources().getXml(resourceId);
         mSkbTemplate = null;
-        SoftKeyboard softKeyboard = null;
+        SoftKeyboard softKeyboard = null;//键盘声明
         Drawable skbBg;
         Drawable popupBg;
         Drawable balloonBg;
         SoftKey softKey = null;
-
+        //实例化这么多对象干什么用？
         KeyCommonAttributes attrDef = new KeyCommonAttributes(xrp);
         KeyCommonAttributes attrSkb = new KeyCommonAttributes(xrp);
         KeyCommonAttributes attrRow = new KeyCommonAttributes(xrp);
@@ -451,19 +519,20 @@ public class XmlKeyboardLoader {
 
         mKeyXPos = 0;
         mKeyYPos = 0;
-        mSkbWidth = skbWidth;
-        mSkbHeight = skbHeight;
+        mSkbWidth = skbWidth;//宽
+        mSkbHeight = skbHeight;//高
         //xml解析,为什么Android SDK里面的Keyboard提供的xml解析，代码较少呢？
         try {
             mKeyXMargin = 0;
             mKeyYMargin = 0;
-            mXmlEventType = xrp.next();
-            while (mXmlEventType != XmlResourceParser.END_DOCUMENT) {
+            mXmlEventType = xrp.next();//xrp是一个什么样的对象呢？xml直接就变成了xrp对象。有对xml 进行了变化
+            while (mXmlEventType != XmlResourceParser.END_DOCUMENT) {//如果！=1
                 mNextEventFetched = false;
-                if (mXmlEventType == XmlResourceParser.START_TAG) {
+                if (mXmlEventType == XmlResourceParser.START_TAG) {//==2
                     String attr = xrp.getName();
                     // 1. Is it the root element, "keyboard"?
                     if (XMLTAG_KEYBOARD.compareTo(attr) == 0) {
+                        //keyboard 标签
                         // 1.1 Get the keyboard template id.
                         int skbTemplateId = xrp.getAttributeResourceValue(null,
                                 XMLATTR_SKB_TEMPLATE, 0);
@@ -511,6 +580,7 @@ public class XmlKeyboardLoader {
                         }
                         softKeyboard.setKeyMargins(mKeyXMargin, mKeyYMargin);
                     } else if (XMLTAG_ROW.compareTo(attr) == 0) {
+                        //比较是否为row开头
                         if (!attrRow.getAttributes(attrSkb)) {
                             return null;
                         }
@@ -521,6 +591,7 @@ public class XmlKeyboardLoader {
                                 KeyRow.ALWAYS_SHOW_ROW_ID);
                         softKeyboard.beginNewRow(rowId, mKeyYPos);
                     } else if (XMLTAG_KEYS.compareTo(attr) == 0) {
+                        //比较是否为keys开头
                         if (null == softKeyboard) return null;
                         if (!attrKeys.getAttributes(attrRow)) {
                             return null;
@@ -575,6 +646,7 @@ public class XmlKeyboardLoader {
                             }
                         }
                     } else if (XMLTAG_KEY.compareTo(attr) == 0) {
+                        //比较是否为key开头
                         if (null == softKeyboard) {
                             return null;
                         }
@@ -612,6 +684,7 @@ public class XmlKeyboardLoader {
                         softKeyboard.addSoftKey(softKey);//添加单个按键
                     }
                 } else if (mXmlEventType == XmlResourceParser.END_TAG) {
+                    //结束标签
                     String attr = xrp.getName();
                     if (XMLTAG_ROW.compareTo(attr) == 0) {
                         mKeyYPos += attrRow.keyHeight;
@@ -621,7 +694,7 @@ public class XmlKeyboardLoader {
                     }
                 }
 
-                // Get the next tag.
+                // Get the next tag. 下一个标签
                 if (!mNextEventFetched) mXmlEventType = xrp.next();
             }
             xrp.close();
@@ -635,9 +708,11 @@ public class XmlKeyboardLoader {
         return null;
     }
 
-    // Caller makes sure xrp and r are valid.
+    //可以看到这个类只有两个Public方法，其他都是私有方法。也就是说私有方法都是给自己用，才写的。不用关心。
+
+    // Caller makes sure xrp and r are valid. 译文：调用者必须保证 xrp 和 r 有效。
     private SoftKey getSoftKey(XmlResourceParser xrp,
-            KeyCommonAttributes attrKey) throws XmlPullParserException,
+                               KeyCommonAttributes attrKey) throws XmlPullParserException,
             IOException {
         int keyCode = getInteger(xrp, XMLATTR_KEY_CODE, 0);
         String keyLabel = getString(xrp, XMLATTR_KEY_LABEL, null);
@@ -820,7 +895,7 @@ public class XmlKeyboardLoader {
     }
 
     private boolean getBoolean(XmlResourceParser xrp, String name,
-            boolean defValue) {
+                               boolean defValue) {
         String s = xrp.getAttributeValue(null, name);
         if (null == s) return defValue;
         try {
@@ -832,7 +907,7 @@ public class XmlKeyboardLoader {
     }
 
     private Drawable getDrawable(XmlResourceParser xrp, String name,
-            Drawable defValue) {
+                                 Drawable defValue) {
         int resId = xrp.getAttributeResourceValue(null, name, 0);
         if (0 == resId) return defValue;
         return mResources.getDrawable(resId);

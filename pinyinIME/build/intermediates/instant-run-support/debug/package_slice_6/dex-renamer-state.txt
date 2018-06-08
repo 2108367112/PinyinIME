@@ -1,4 +1,4 @@
-#Thu May 31 15:25:52 CST 2018
+#Thu Jun 07 16:05:58 CST 2018
 base.0=C\:\\Users\\linboqiang\\Desktop\\pinyin\\pinyinIME\\build\\intermediates\\transforms\\dexMerger\\debug\\6
 path.0=classes.dex
 renamed.0=classes.dex

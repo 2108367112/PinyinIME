@@ -120,6 +120,8 @@ public class SoftKeyboard {
 
     private Rect mTmpRect = new Rect();
 
+    //可以看到，SoftKeyboard的构造方法，要传进 宽度 和 高度。即：每一个加载了的SoftKeyboard 宽度 和高度都会得到确定。宽、高确定了，
+    // 按键自然就能分配空间。
     public SoftKeyboard(int skbXmlId, SkbTemplate skbTemplate, int skbWidth,
             int skbHeight) {
         mSkbXmlId = skbXmlId;

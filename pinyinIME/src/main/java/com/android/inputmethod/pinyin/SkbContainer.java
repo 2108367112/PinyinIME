@@ -249,7 +249,7 @@ public class SkbContainer extends RelativeLayout implements OnTouchListener {
 
         mMajorView.invalidate();
     }
-    //更新输入法布局(中英切换、数字切换)
+    //切换输入模式 例如：中、英、数字、符号。
     public void updateInputMode() {
         int skbLayout = mInputModeSwitcher.getSkbLayout();//从这里可以看出，mInputModeSwitcher比SkbContainer 更早收到切换要求。
         if (mSkbLayout != skbLayout) {
@@ -326,6 +326,7 @@ public class SkbContainer extends RelativeLayout implements OnTouchListener {
     }
     //响应按键事件
     private void responseKeyEvent(SoftKey sKey) {
+        Log.d(TAG, "响应按键事件 ");
         if (null == sKey) return;
         ((PinyinIME) mService).responseSoftKeyEvent(sKey);//PinyinIME响应 按键事件
         return;
@@ -442,6 +443,7 @@ public class SkbContainer extends RelativeLayout implements OnTouchListener {
 
     @Override
     public boolean onTouchEvent(MotionEvent event) {
+        Log.d(TAG, "触摸事件---------");
         super.onTouchEvent(event);
 
         if (mSkbFlipper.isFlipping()) {
@@ -537,7 +539,7 @@ public class SkbContainer extends RelativeLayout implements OnTouchListener {
             }
 
             if (!mPopupSkbShow || !mPopupSkbNoResponse) {
-                responseKeyEvent(mSoftKeyDown);
+                responseKeyEvent(mSoftKeyDown);//松开，处理按键。
             }
 
             if (mSkv == mPopupSkbView && !mPopupSkbNoResponse) {
@@ -637,6 +639,7 @@ public class SkbContainer extends RelativeLayout implements OnTouchListener {
                             }
                         }
                     } else {
+                        Log.d(TAG, "run: ++++++响应事件");
                         responseKeyEvent(mSoftKeyDown);
                         long timeout;
                         if (mResponseTimes < LONG_PRESS_KEYNUM1) {

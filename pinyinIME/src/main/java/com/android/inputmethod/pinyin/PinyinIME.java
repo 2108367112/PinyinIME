@@ -239,27 +239,35 @@ public class PinyinIME extends InputMethodService {
         resetToIdleState(false);
     }
 
-    //按下
+    //键盘 按下响应
+    //onKeyDown方法：该方法是接口KeyEvent.Callback中的抽象方法，也就是说有对象回调了这个方法。
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
-        if (processKey(event, 0 != event.getRepeatCount())) return true;
-        return super.onKeyDown(keyCode, event);
+        Log.d(TAG, "按键按下----------");
+        if (processKey(event, 0 != event.getRepeatCount())) return true;//先进行处理，看处理结果，是否退出。
+        Log.d(TAG, "事件未处理完成，交给父类！");
+        return super.onKeyDown(keyCode, event);//调用父类的目的是，对于一些无法处理的事件，给父类处理。
     }
 
-    //松开
+
+    //键盘 松开响应
     @Override
     public boolean onKeyUp(int keyCode, KeyEvent event) {
-        if (processKey(event, true)) return true;
+        Log.d(TAG, "按键松开----------");
+        if (processKey(event, true)) return true;//先进行处理，看处理结果，是否退出。
+        Log.d(TAG, "事件未处理完成，交给父类！");
         return super.onKeyUp(keyCode, event);
     }
 
     //处理按键的真正方法
     private boolean processKey(KeyEvent event, boolean realAction) {
+        Log.d(TAG, "按键处理流程·····");
         if (ImeState.STATE_BYPASS == mImeState) return false;
-
+        //按键编码
         int keyCode = event.getKeyCode();
         // SHIFT-SPACE is used to switch between Chinese and English
         // when HKB is on.
+        //硬件键盘编码中，shift+space同时按下，则是用来切换中、英文输入法。
         if (KeyEvent.KEYCODE_SPACE == keyCode && event.isShiftPressed()) {
             if (!realAction) return true;
 
@@ -276,6 +284,7 @@ public class PinyinIME extends InputMethodService {
 
         // If HKB is on to input English, by-pass the key event so that
         // default key listener will handle it.
+        //如果HKB正在输入英语，则绕过关键事件，以便默认密钥侦听器将处理它。
         if (mInputModeSwitcher.isEnglishWithHkb()) {
             return false;
         }
@@ -1191,7 +1200,7 @@ public class PinyinIME extends InputMethodService {
         }
     }
 
-    //选择
+    //候选词汇选择
     private void onChoiceTouched(int activeCandNo) {
         if (mImeState == ImeState.STATE_COMPOSING) {
             changeToStateInput(true);
@@ -1265,7 +1274,7 @@ public class PinyinIME extends InputMethodService {
     }
 
 
-    /****************   下面的代码——定义了几个Class    *****************/
+    /****************    定义了几个Class    *****************/
 
     private class PopupTimer extends Handler implements Runnable {
         private int mParentLocation[] = new int[2];

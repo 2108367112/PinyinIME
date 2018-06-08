@@ -32,6 +32,10 @@
         "source": "C:\\Users\\linboqiang\\Desktop\\pinyin\\pinyinIME\\src\\main\\res\\drawable\\num3.png"
     },
     {
+        "merged": "C:\\Users\\linboqiang\\Desktop\\pinyin\\pinyinIME\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\linboqiang\\Desktop\\pinyin\\pinyinIME\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
         "merged": "C:\\Users\\linboqiang\\Desktop\\pinyin\\pinyinIME\\build\\intermediates\\res\\merged\\debug\\drawable_shift_on_popup_icon.png.flat",
         "source": "C:\\Users\\linboqiang\\Desktop\\pinyin\\pinyinIME\\src\\main\\res\\drawable\\shift_on_popup_icon.png"
     },
@@ -56,12 +60,12 @@
         "source": "C:\\Users\\linboqiang\\Desktop\\pinyin\\pinyinIME\\src\\main\\res\\drawable\\emotion_icon_00.png"
     },
     {
-        "merged": "C:\\Users\\linboqiang\\Desktop\\pinyin\\pinyinIME\\build\\intermediates\\res\\merged\\debug\\drawable_comma_full_icon.png.flat",
-        "source": "C:\\Users\\linboqiang\\Desktop\\pinyin\\pinyinIME\\src\\main\\res\\drawable\\comma_full_icon.png"
-    },
-    {
         "merged": "C:\\Users\\linboqiang\\Desktop\\pinyin\\pinyinIME\\build\\intermediates\\res\\merged\\debug\\drawable_shift_off_popup_icon.png.flat",
         "source": "C:\\Users\\linboqiang\\Desktop\\pinyin\\pinyinIME\\src\\main\\res\\drawable\\shift_off_popup_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\linboqiang\\Desktop\\pinyin\\pinyinIME\\build\\intermediates\\res\\merged\\debug\\drawable_comma_full_icon.png.flat",
+        "source": "C:\\Users\\linboqiang\\Desktop\\pinyin\\pinyinIME\\src\\main\\res\\drawable\\comma_full_icon.png"
     },
     {
         "merged": "C:\\Users\\linboqiang\\Desktop\\pinyin\\pinyinIME\\build\\intermediates\\res\\merged\\debug\\drawable_num9.png.flat",
@@ -148,12 +152,16 @@
         "source": "C:\\Users\\linboqiang\\Desktop\\pinyin\\pinyinIME\\src\\main\\res\\drawable\\emotion_icon_24.png"
     },
     {
-        "merged": "C:\\Users\\linboqiang\\Desktop\\pinyin\\pinyinIME\\build\\intermediates\\res\\merged\\debug\\drawable_candidate_hl_bg.9.png.flat",
-        "source": "C:\\Users\\linboqiang\\Desktop\\pinyin\\pinyinIME\\src\\main\\res\\drawable\\candidate_hl_bg.9.png"
+        "merged": "C:\\Users\\linboqiang\\Desktop\\pinyin\\pinyinIME\\build\\intermediates\\res\\merged\\debug\\xml_skb_phone9.xml.flat",
+        "source": "C:\\Users\\linboqiang\\Desktop\\pinyin\\pinyinIME\\src\\main\\res\\xml\\skb_phone9.xml"
     },
     {
         "merged": "C:\\Users\\linboqiang\\Desktop\\pinyin\\pinyinIME\\build\\intermediates\\res\\merged\\debug\\drawable_emotion_icon_16.png.flat",
         "source": "C:\\Users\\linboqiang\\Desktop\\pinyin\\pinyinIME\\src\\main\\res\\drawable\\emotion_icon_16.png"
+    },
+    {
+        "merged": "C:\\Users\\linboqiang\\Desktop\\pinyin\\pinyinIME\\build\\intermediates\\res\\merged\\debug\\drawable_candidate_hl_bg.9.png.flat",
+        "source": "C:\\Users\\linboqiang\\Desktop\\pinyin\\pinyinIME\\src\\main\\res\\drawable\\candidate_hl_bg.9.png"
     },
     {
         "merged": "C:\\Users\\linboqiang\\Desktop\\pinyin\\pinyinIME\\build\\intermediates\\res\\merged\\debug\\drawable_num1.png.flat",
@@ -212,12 +220,12 @@
         "source": "C:\\Users\\linboqiang\\Desktop\\pinyin\\pinyinIME\\src\\main\\res\\drawable\\emotion_icon_03.png"
     },
     {
-        "merged": "C:\\Users\\linboqiang\\Desktop\\pinyin\\pinyinIME\\build\\intermediates\\res\\merged\\debug\\drawable_emotion_icon_20_popup.png.flat",
-        "source": "C:\\Users\\linboqiang\\Desktop\\pinyin\\pinyinIME\\src\\main\\res\\drawable\\emotion_icon_20_popup.png"
-    },
-    {
         "merged": "C:\\Users\\linboqiang\\Desktop\\pinyin\\pinyinIME\\build\\intermediates\\res\\merged\\debug\\drawable_search_icon.png.flat",
         "source": "C:\\Users\\linboqiang\\Desktop\\pinyin\\pinyinIME\\src\\main\\res\\drawable\\search_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\linboqiang\\Desktop\\pinyin\\pinyinIME\\build\\intermediates\\res\\merged\\debug\\drawable_emotion_icon_20_popup.png.flat",
+        "source": "C:\\Users\\linboqiang\\Desktop\\pinyin\\pinyinIME\\src\\main\\res\\drawable\\emotion_icon_20_popup.png"
     },
     {
         "merged": "C:\\Users\\linboqiang\\Desktop\\pinyin\\pinyinIME\\build\\intermediates\\res\\merged\\debug\\drawable_normal_key_bg.9.png.flat",
@@ -260,12 +268,12 @@
         "source": "C:\\Users\\linboqiang\\Desktop\\pinyin\\pinyinIME\\src\\main\\res\\drawable\\comma_full_popup_icon.png"
     },
     {
-        "merged": "C:\\Users\\linboqiang\\Desktop\\pinyin\\pinyinIME\\build\\intermediates\\res\\merged\\debug\\drawable_light_key_bg.9.png.flat",
-        "source": "C:\\Users\\linboqiang\\Desktop\\pinyin\\pinyinIME\\src\\main\\res\\drawable\\light_key_bg.9.png"
-    },
-    {
         "merged": "C:\\Users\\linboqiang\\Desktop\\pinyin\\pinyinIME\\build\\intermediates\\res\\merged\\debug\\xml_skb_sym1.xml.flat",
         "source": "C:\\Users\\linboqiang\\Desktop\\pinyin\\pinyinIME\\src\\main\\res\\xml\\skb_sym1.xml"
+    },
+    {
+        "merged": "C:\\Users\\linboqiang\\Desktop\\pinyin\\pinyinIME\\build\\intermediates\\res\\merged\\debug\\drawable_light_key_bg.9.png.flat",
+        "source": "C:\\Users\\linboqiang\\Desktop\\pinyin\\pinyinIME\\src\\main\\res\\drawable\\light_key_bg.9.png"
     },
     {
         "merged": "C:\\Users\\linboqiang\\Desktop\\pinyin\\pinyinIME\\build\\intermediates\\res\\merged\\debug\\drawable_smiley_icon.png.flat",
@@ -304,12 +312,12 @@
         "source": "C:\\Users\\linboqiang\\Desktop\\pinyin\\pinyinIME\\src\\main\\res\\drawable\\arrow_left.png"
     },
     {
-        "merged": "C:\\Users\\linboqiang\\Desktop\\pinyin\\pinyinIME\\build\\intermediates\\res\\merged\\debug\\drawable_emotion_icon_04.png.flat",
-        "source": "C:\\Users\\linboqiang\\Desktop\\pinyin\\pinyinIME\\src\\main\\res\\drawable\\emotion_icon_04.png"
-    },
-    {
         "merged": "C:\\Users\\linboqiang\\Desktop\\pinyin\\pinyinIME\\build\\intermediates\\res\\merged\\debug\\layout_skb_container.xml.flat",
         "source": "C:\\Users\\linboqiang\\Desktop\\pinyin\\pinyinIME\\src\\main\\res\\layout\\skb_container.xml"
+    },
+    {
+        "merged": "C:\\Users\\linboqiang\\Desktop\\pinyin\\pinyinIME\\build\\intermediates\\res\\merged\\debug\\drawable_emotion_icon_04.png.flat",
+        "source": "C:\\Users\\linboqiang\\Desktop\\pinyin\\pinyinIME\\src\\main\\res\\drawable\\emotion_icon_04.png"
     },
     {
         "merged": "C:\\Users\\linboqiang\\Desktop\\pinyin\\pinyinIME\\build\\intermediates\\res\\merged\\debug\\layout_candidates_container.xml.flat",
@@ -376,12 +384,12 @@
         "source": "C:\\Users\\linboqiang\\Desktop\\pinyin\\pinyinIME\\src\\main\\res\\drawable\\emotion_icon_00_popup.png"
     },
     {
-        "merged": "C:\\Users\\linboqiang\\Desktop\\pinyin\\pinyinIME\\build\\intermediates\\res\\merged\\debug\\drawable_period_popup_icon.png.flat",
-        "source": "C:\\Users\\linboqiang\\Desktop\\pinyin\\pinyinIME\\src\\main\\res\\drawable\\period_popup_icon.png"
-    },
-    {
         "merged": "C:\\Users\\linboqiang\\Desktop\\pinyin\\pinyinIME\\build\\intermediates\\res\\merged\\debug\\drawable_emotion_icon_21_popup.png.flat",
         "source": "C:\\Users\\linboqiang\\Desktop\\pinyin\\pinyinIME\\src\\main\\res\\drawable\\emotion_icon_21_popup.png"
+    },
+    {
+        "merged": "C:\\Users\\linboqiang\\Desktop\\pinyin\\pinyinIME\\build\\intermediates\\res\\merged\\debug\\drawable_period_popup_icon.png.flat",
+        "source": "C:\\Users\\linboqiang\\Desktop\\pinyin\\pinyinIME\\src\\main\\res\\drawable\\period_popup_icon.png"
     },
     {
         "merged": "C:\\Users\\linboqiang\\Desktop\\pinyin\\pinyinIME\\build\\intermediates\\res\\merged\\debug\\drawable_delete_popup_icon.png.flat",
@@ -396,12 +404,12 @@
         "source": "C:\\Users\\linboqiang\\Desktop\\pinyin\\pinyinIME\\src\\main\\res\\drawable\\candidates_vertical_line.png"
     },
     {
-        "merged": "C:\\Users\\linboqiang\\Desktop\\pinyin\\pinyinIME\\build\\intermediates\\res\\merged\\debug\\drawable_emotion_icon_12_popup.png.flat",
-        "source": "C:\\Users\\linboqiang\\Desktop\\pinyin\\pinyinIME\\src\\main\\res\\drawable\\emotion_icon_12_popup.png"
-    },
-    {
         "merged": "C:\\Users\\linboqiang\\Desktop\\pinyin\\pinyinIME\\build\\intermediates\\res\\merged\\debug\\drawable_emotion_icon_15_popup.png.flat",
         "source": "C:\\Users\\linboqiang\\Desktop\\pinyin\\pinyinIME\\src\\main\\res\\drawable\\emotion_icon_15_popup.png"
+    },
+    {
+        "merged": "C:\\Users\\linboqiang\\Desktop\\pinyin\\pinyinIME\\build\\intermediates\\res\\merged\\debug\\drawable_emotion_icon_12_popup.png.flat",
+        "source": "C:\\Users\\linboqiang\\Desktop\\pinyin\\pinyinIME\\src\\main\\res\\drawable\\emotion_icon_12_popup.png"
     },
     {
         "merged": "C:\\Users\\linboqiang\\Desktop\\pinyin\\pinyinIME\\build\\intermediates\\res\\merged\\debug\\drawable_period_full_icon.png.flat",

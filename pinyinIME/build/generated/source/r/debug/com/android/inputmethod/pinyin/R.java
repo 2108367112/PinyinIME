@@ -8,191 +8,3052 @@
 package com.android.inputmethod.pinyin;
 
 public final class R {
+  public static final class attr {
+    /**
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     */
+    public static final int barrierAllowsGoneWidgets=0x7f010000;
+    /**
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>bottom</td><td>3</td><td></td></tr>
+     * <tr><td>end</td><td>6</td><td></td></tr>
+     * <tr><td>left</td><td>0</td><td></td></tr>
+     * <tr><td>right</td><td>1</td><td></td></tr>
+     * <tr><td>start</td><td>5</td><td></td></tr>
+     * <tr><td>top</td><td>2</td><td></td></tr>
+     * </table>
+     */
+    public static final int barrierDirection=0x7f010001;
+    /**
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     */
+    public static final int chainUseRtl=0x7f010002;
+    /**
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     */
+    public static final int constraintSet=0x7f010003;
+    /**
+     * <p>May be a string value, using '\\;' to escape characters such as
+     * '\\n' or '\\uxxxx' for a unicode character;
+     */
+    public static final int constraint_referenced_ids=0x7f010004;
+    /**
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     */
+    public static final int content=0x7f010005;
+    /**
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>gone</td><td>0</td><td></td></tr>
+     * <tr><td>invisible</td><td>1</td><td></td></tr>
+     * </table>
+     */
+    public static final int emptyVisibility=0x7f010006;
+    /**
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     */
+    public static final int layout_constrainedHeight=0x7f010007;
+    /**
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     */
+    public static final int layout_constrainedWidth=0x7f010008;
+    /**
+     * <p>May be an integer value, such as "<code>100</code>".
+     */
+    public static final int layout_constraintBaseline_creator=0x7f010009;
+    /**
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>parent</td><td>0</td><td></td></tr>
+     * </table>
+     */
+    public static final int layout_constraintBaseline_toBaselineOf=0x7f01000a;
+    /**
+     * <p>May be an integer value, such as "<code>100</code>".
+     */
+    public static final int layout_constraintBottom_creator=0x7f01000b;
+    /**
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>parent</td><td>0</td><td></td></tr>
+     * </table>
+     */
+    public static final int layout_constraintBottom_toBottomOf=0x7f01000c;
+    /**
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>parent</td><td>0</td><td></td></tr>
+     * </table>
+     */
+    public static final int layout_constraintBottom_toTopOf=0x7f01000d;
+    /**
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     */
+    public static final int layout_constraintCircle=0x7f01000e;
+    /**
+     * <p>May be an integer value, such as "<code>100</code>".
+     */
+    public static final int layout_constraintCircleAngle=0x7f01000f;
+    /**
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     */
+    public static final int layout_constraintCircleRadius=0x7f010010;
+    /**
+     * <p>May be a string value, using '\\;' to escape characters such as
+     * '\\n' or '\\uxxxx' for a unicode character;
+     */
+    public static final int layout_constraintDimensionRatio=0x7f010011;
+    /**
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>parent</td><td>0</td><td></td></tr>
+     * </table>
+     */
+    public static final int layout_constraintEnd_toEndOf=0x7f010012;
+    /**
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>parent</td><td>0</td><td></td></tr>
+     * </table>
+     */
+    public static final int layout_constraintEnd_toStartOf=0x7f010013;
+    /**
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     */
+    public static final int layout_constraintGuide_begin=0x7f010014;
+    /**
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     */
+    public static final int layout_constraintGuide_end=0x7f010015;
+    /**
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     */
+    public static final int layout_constraintGuide_percent=0x7f010016;
+    /**
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>percent</td><td>2</td><td></td></tr>
+     * <tr><td>spread</td><td>0</td><td></td></tr>
+     * <tr><td>wrap</td><td>1</td><td></td></tr>
+     * </table>
+     */
+    public static final int layout_constraintHeight_default=0x7f010017;
+    /**
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>wrap</td><td>fffffffe</td><td></td></tr>
+     * </table>
+     */
+    public static final int layout_constraintHeight_max=0x7f010018;
+    /**
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>wrap</td><td>fffffffe</td><td></td></tr>
+     * </table>
+     */
+    public static final int layout_constraintHeight_min=0x7f010019;
+    /**
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     */
+    public static final int layout_constraintHeight_percent=0x7f01001a;
+    /**
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     */
+    public static final int layout_constraintHorizontal_bias=0x7f01001b;
+    /**
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>packed</td><td>2</td><td></td></tr>
+     * <tr><td>spread</td><td>0</td><td></td></tr>
+     * <tr><td>spread_inside</td><td>1</td><td></td></tr>
+     * </table>
+     */
+    public static final int layout_constraintHorizontal_chainStyle=0x7f01001c;
+    /**
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     */
+    public static final int layout_constraintHorizontal_weight=0x7f01001d;
+    /**
+     * <p>May be an integer value, such as "<code>100</code>".
+     */
+    public static final int layout_constraintLeft_creator=0x7f01001e;
+    /**
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>parent</td><td>0</td><td></td></tr>
+     * </table>
+     */
+    public static final int layout_constraintLeft_toLeftOf=0x7f01001f;
+    /**
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>parent</td><td>0</td><td></td></tr>
+     * </table>
+     */
+    public static final int layout_constraintLeft_toRightOf=0x7f010020;
+    /**
+     * <p>May be an integer value, such as "<code>100</code>".
+     */
+    public static final int layout_constraintRight_creator=0x7f010021;
+    /**
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>parent</td><td>0</td><td></td></tr>
+     * </table>
+     */
+    public static final int layout_constraintRight_toLeftOf=0x7f010022;
+    /**
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>parent</td><td>0</td><td></td></tr>
+     * </table>
+     */
+    public static final int layout_constraintRight_toRightOf=0x7f010023;
+    /**
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>parent</td><td>0</td><td></td></tr>
+     * </table>
+     */
+    public static final int layout_constraintStart_toEndOf=0x7f010024;
+    /**
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>parent</td><td>0</td><td></td></tr>
+     * </table>
+     */
+    public static final int layout_constraintStart_toStartOf=0x7f010025;
+    /**
+     * <p>May be an integer value, such as "<code>100</code>".
+     */
+    public static final int layout_constraintTop_creator=0x7f010026;
+    /**
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>parent</td><td>0</td><td></td></tr>
+     * </table>
+     */
+    public static final int layout_constraintTop_toBottomOf=0x7f010027;
+    /**
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>parent</td><td>0</td><td></td></tr>
+     * </table>
+     */
+    public static final int layout_constraintTop_toTopOf=0x7f010028;
+    /**
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     */
+    public static final int layout_constraintVertical_bias=0x7f010029;
+    /**
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>packed</td><td>2</td><td></td></tr>
+     * <tr><td>spread</td><td>0</td><td></td></tr>
+     * <tr><td>spread_inside</td><td>1</td><td></td></tr>
+     * </table>
+     */
+    public static final int layout_constraintVertical_chainStyle=0x7f01002a;
+    /**
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     */
+    public static final int layout_constraintVertical_weight=0x7f01002b;
+    /**
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>percent</td><td>2</td><td></td></tr>
+     * <tr><td>spread</td><td>0</td><td></td></tr>
+     * <tr><td>wrap</td><td>1</td><td></td></tr>
+     * </table>
+     */
+    public static final int layout_constraintWidth_default=0x7f01002c;
+    /**
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>wrap</td><td>fffffffe</td><td></td></tr>
+     * </table>
+     */
+    public static final int layout_constraintWidth_max=0x7f01002d;
+    /**
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>wrap</td><td>fffffffe</td><td></td></tr>
+     * </table>
+     */
+    public static final int layout_constraintWidth_min=0x7f01002e;
+    /**
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     */
+    public static final int layout_constraintWidth_percent=0x7f01002f;
+    /**
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     */
+    public static final int layout_editor_absoluteX=0x7f010030;
+    /**
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     */
+    public static final int layout_editor_absoluteY=0x7f010031;
+    /**
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     */
+    public static final int layout_goneMarginBottom=0x7f010032;
+    /**
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     */
+    public static final int layout_goneMarginEnd=0x7f010033;
+    /**
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     */
+    public static final int layout_goneMarginLeft=0x7f010034;
+    /**
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     */
+    public static final int layout_goneMarginRight=0x7f010035;
+    /**
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     */
+    public static final int layout_goneMarginStart=0x7f010036;
+    /**
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     */
+    public static final int layout_goneMarginTop=0x7f010037;
+    /**
+     * <p>Must be one or more (separated by '|') of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>barrier</td><td>2</td><td></td></tr>
+     * <tr><td>chains</td><td>4</td><td></td></tr>
+     * <tr><td>dimensions</td><td>8</td><td></td></tr>
+     * <tr><td>direct</td><td>1</td><td>for now only direct & barriers</td></tr>
+     * <tr><td>none</td><td>0</td><td></td></tr>
+     * <tr><td>standard</td><td>3</td><td></td></tr>
+     * </table>
+     */
+    public static final int layout_optimizationLevel=0x7f010038;
+  }
   public static final class bool {
-    public static final int im_is_default=0x7f010000;
+    public static final int im_is_default=0x7f020000;
   }
   public static final class color {
-    public static final int active_candidate_color=0x7f020000;
-    public static final int balloon_color=0x7f020001;
-    public static final int candidate_color=0x7f020002;
-    public static final int composing_color=0x7f020003;
-    public static final int composing_color_hl=0x7f020004;
-    public static final int composing_color_idle=0x7f020005;
-    public static final int footnote_color=0x7f020006;
-    public static final int label_color=0x7f020007;
-    public static final int label_color_hl0=0x7f020008;
-    public static final int recommended_candidate_color=0x7f020009;
+    public static final int active_candidate_color=0x7f030000;
+    public static final int balloon_color=0x7f030001;
+    public static final int candidate_color=0x7f030002;
+    public static final int composing_color=0x7f030003;
+    public static final int composing_color_hl=0x7f030004;
+    public static final int composing_color_idle=0x7f030005;
+    public static final int footnote_color=0x7f030006;
+    public static final int label_color=0x7f030007;
+    public static final int label_color_hl0=0x7f030008;
+    public static final int recommended_candidate_color=0x7f030009;
   }
   public static final class dimen {
-    public static final int candidate_margin_left_right=0x7f030000;
-    public static final int candview_background_padding=0x7f030001;
-    public static final int composing_height=0x7f030002;
+    public static final int candidate_margin_left_right=0x7f040000;
+    public static final int candview_background_padding=0x7f040001;
+    public static final int composing_height=0x7f040002;
   }
   public static final class drawable {
-    public static final int app_icon=0x7f040000;
-    public static final int arrow_bg=0x7f040001;
-    public static final int arrow_left=0x7f040002;
-    public static final int arrow_right=0x7f040003;
-    public static final int candidate_balloon_bg=0x7f040004;
-    public static final int candidate_hl_bg=0x7f040005;
-    public static final int candidates_area_bg=0x7f040006;
-    public static final int candidates_vertical_line=0x7f040007;
-    public static final int cands_container_bg=0x7f040008;
-    public static final int comma_full_icon=0x7f040009;
-    public static final int comma_full_popup_icon=0x7f04000a;
-    public static final int composing_area_bg=0x7f04000b;
-    public static final int composing_area_cursor=0x7f04000c;
-    public static final int composing_hl_bg=0x7f04000d;
-    public static final int delete_icon=0x7f04000e;
-    public static final int delete_popup_icon=0x7f04000f;
-    public static final int dun_icon=0x7f040010;
-    public static final int dun_popup_icon=0x7f040011;
-    public static final int emotion_icon_00=0x7f040012;
-    public static final int emotion_icon_00_popup=0x7f040013;
-    public static final int emotion_icon_01=0x7f040014;
-    public static final int emotion_icon_01_popup=0x7f040015;
-    public static final int emotion_icon_02=0x7f040016;
-    public static final int emotion_icon_02_popup=0x7f040017;
-    public static final int emotion_icon_03=0x7f040018;
-    public static final int emotion_icon_03_popup=0x7f040019;
-    public static final int emotion_icon_04=0x7f04001a;
-    public static final int emotion_icon_04_popup=0x7f04001b;
-    public static final int emotion_icon_05=0x7f04001c;
-    public static final int emotion_icon_05_popup=0x7f04001d;
-    public static final int emotion_icon_06=0x7f04001e;
-    public static final int emotion_icon_06_popup=0x7f04001f;
-    public static final int emotion_icon_10=0x7f040020;
-    public static final int emotion_icon_10_popup=0x7f040021;
-    public static final int emotion_icon_11=0x7f040022;
-    public static final int emotion_icon_11_popup=0x7f040023;
-    public static final int emotion_icon_12=0x7f040024;
-    public static final int emotion_icon_12_popup=0x7f040025;
-    public static final int emotion_icon_13=0x7f040026;
-    public static final int emotion_icon_13_popup=0x7f040027;
-    public static final int emotion_icon_14=0x7f040028;
-    public static final int emotion_icon_14_popup=0x7f040029;
-    public static final int emotion_icon_15=0x7f04002a;
-    public static final int emotion_icon_15_popup=0x7f04002b;
-    public static final int emotion_icon_16=0x7f04002c;
-    public static final int emotion_icon_16_popup=0x7f04002d;
-    public static final int emotion_icon_20=0x7f04002e;
-    public static final int emotion_icon_20_popup=0x7f04002f;
-    public static final int emotion_icon_21=0x7f040030;
-    public static final int emotion_icon_21_popup=0x7f040031;
-    public static final int emotion_icon_22=0x7f040032;
-    public static final int emotion_icon_22_popup=0x7f040033;
-    public static final int emotion_icon_23=0x7f040034;
-    public static final int emotion_icon_23_popup=0x7f040035;
-    public static final int emotion_icon_24=0x7f040036;
-    public static final int emotion_icon_24_popup=0x7f040037;
-    public static final int enter_icon=0x7f040038;
-    public static final int enter_popup_icon=0x7f040039;
-    public static final int ime_en=0x7f04003a;
-    public static final int ime_pinyin=0x7f04003b;
-    public static final int key_balloon_bg=0x7f04003c;
-    public static final int light_key_bg=0x7f04003d;
-    public static final int light_key_hl_bg=0x7f04003e;
-    public static final int light_key_up_bg=0x7f04003f;
-    public static final int light_key_up_hl_bg=0x7f040040;
-    public static final int miniskb_bg=0x7f040041;
-    public static final int normal_key_bg=0x7f040042;
-    public static final int normal_key_hl_bg=0x7f040043;
-    public static final int num0=0x7f040044;
-    public static final int num1=0x7f040045;
-    public static final int num2=0x7f040046;
-    public static final int num3=0x7f040047;
-    public static final int num4=0x7f040048;
-    public static final int num5=0x7f040049;
-    public static final int num6=0x7f04004a;
-    public static final int num7=0x7f04004b;
-    public static final int num8=0x7f04004c;
-    public static final int num9=0x7f04004d;
-    public static final int numalt=0x7f04004e;
-    public static final int numpound=0x7f04004f;
-    public static final int numstar=0x7f040050;
-    public static final int period_full_icon=0x7f040051;
-    public static final int period_full_popup_icon=0x7f040052;
-    public static final int period_icon=0x7f040053;
-    public static final int period_popup_icon=0x7f040054;
-    public static final int search_icon=0x7f040055;
-    public static final int search_popup_icon=0x7f040056;
-    public static final int shift_off_icon=0x7f040057;
-    public static final int shift_off_popup_icon=0x7f040058;
-    public static final int shift_on_icon=0x7f040059;
-    public static final int shift_on_popup_icon=0x7f04005a;
-    public static final int skb_bg=0x7f04005b;
-    public static final int skb_container_bg=0x7f04005c;
-    public static final int smiley_icon=0x7f04005d;
-    public static final int smiley_popup_icon=0x7f04005e;
-    public static final int space_icon=0x7f04005f;
-    public static final int space_popup_icon=0x7f040060;
+    public static final int app_icon=0x7f050000;
+    public static final int arrow_bg=0x7f050001;
+    public static final int arrow_left=0x7f050002;
+    public static final int arrow_right=0x7f050003;
+    public static final int candidate_balloon_bg=0x7f050004;
+    public static final int candidate_hl_bg=0x7f050005;
+    public static final int candidates_area_bg=0x7f050006;
+    public static final int candidates_vertical_line=0x7f050007;
+    public static final int cands_container_bg=0x7f050008;
+    public static final int comma_full_icon=0x7f050009;
+    public static final int comma_full_popup_icon=0x7f05000a;
+    public static final int composing_area_bg=0x7f05000b;
+    public static final int composing_area_cursor=0x7f05000c;
+    public static final int composing_hl_bg=0x7f05000d;
+    public static final int delete_icon=0x7f05000e;
+    public static final int delete_popup_icon=0x7f05000f;
+    public static final int dun_icon=0x7f050010;
+    public static final int dun_popup_icon=0x7f050011;
+    public static final int emotion_icon_00=0x7f050012;
+    public static final int emotion_icon_00_popup=0x7f050013;
+    public static final int emotion_icon_01=0x7f050014;
+    public static final int emotion_icon_01_popup=0x7f050015;
+    public static final int emotion_icon_02=0x7f050016;
+    public static final int emotion_icon_02_popup=0x7f050017;
+    public static final int emotion_icon_03=0x7f050018;
+    public static final int emotion_icon_03_popup=0x7f050019;
+    public static final int emotion_icon_04=0x7f05001a;
+    public static final int emotion_icon_04_popup=0x7f05001b;
+    public static final int emotion_icon_05=0x7f05001c;
+    public static final int emotion_icon_05_popup=0x7f05001d;
+    public static final int emotion_icon_06=0x7f05001e;
+    public static final int emotion_icon_06_popup=0x7f05001f;
+    public static final int emotion_icon_10=0x7f050020;
+    public static final int emotion_icon_10_popup=0x7f050021;
+    public static final int emotion_icon_11=0x7f050022;
+    public static final int emotion_icon_11_popup=0x7f050023;
+    public static final int emotion_icon_12=0x7f050024;
+    public static final int emotion_icon_12_popup=0x7f050025;
+    public static final int emotion_icon_13=0x7f050026;
+    public static final int emotion_icon_13_popup=0x7f050027;
+    public static final int emotion_icon_14=0x7f050028;
+    public static final int emotion_icon_14_popup=0x7f050029;
+    public static final int emotion_icon_15=0x7f05002a;
+    public static final int emotion_icon_15_popup=0x7f05002b;
+    public static final int emotion_icon_16=0x7f05002c;
+    public static final int emotion_icon_16_popup=0x7f05002d;
+    public static final int emotion_icon_20=0x7f05002e;
+    public static final int emotion_icon_20_popup=0x7f05002f;
+    public static final int emotion_icon_21=0x7f050030;
+    public static final int emotion_icon_21_popup=0x7f050031;
+    public static final int emotion_icon_22=0x7f050032;
+    public static final int emotion_icon_22_popup=0x7f050033;
+    public static final int emotion_icon_23=0x7f050034;
+    public static final int emotion_icon_23_popup=0x7f050035;
+    public static final int emotion_icon_24=0x7f050036;
+    public static final int emotion_icon_24_popup=0x7f050037;
+    public static final int enter_icon=0x7f050038;
+    public static final int enter_popup_icon=0x7f050039;
+    public static final int ime_en=0x7f05003a;
+    public static final int ime_pinyin=0x7f05003b;
+    public static final int key_balloon_bg=0x7f05003c;
+    public static final int light_key_bg=0x7f05003d;
+    public static final int light_key_hl_bg=0x7f05003e;
+    public static final int light_key_up_bg=0x7f05003f;
+    public static final int light_key_up_hl_bg=0x7f050040;
+    public static final int miniskb_bg=0x7f050041;
+    public static final int normal_key_bg=0x7f050042;
+    public static final int normal_key_hl_bg=0x7f050043;
+    public static final int num0=0x7f050044;
+    public static final int num1=0x7f050045;
+    public static final int num2=0x7f050046;
+    public static final int num3=0x7f050047;
+    public static final int num4=0x7f050048;
+    public static final int num5=0x7f050049;
+    public static final int num6=0x7f05004a;
+    public static final int num7=0x7f05004b;
+    public static final int num8=0x7f05004c;
+    public static final int num9=0x7f05004d;
+    public static final int numalt=0x7f05004e;
+    public static final int numpound=0x7f05004f;
+    public static final int numstar=0x7f050050;
+    public static final int period_full_icon=0x7f050051;
+    public static final int period_full_popup_icon=0x7f050052;
+    public static final int period_icon=0x7f050053;
+    public static final int period_popup_icon=0x7f050054;
+    public static final int search_icon=0x7f050055;
+    public static final int search_popup_icon=0x7f050056;
+    public static final int shift_off_icon=0x7f050057;
+    public static final int shift_off_popup_icon=0x7f050058;
+    public static final int shift_on_icon=0x7f050059;
+    public static final int shift_on_popup_icon=0x7f05005a;
+    public static final int skb_bg=0x7f05005b;
+    public static final int skb_container_bg=0x7f05005c;
+    public static final int smiley_icon=0x7f05005d;
+    public static final int smiley_popup_icon=0x7f05005e;
+    public static final int space_icon=0x7f05005f;
+    public static final int space_popup_icon=0x7f050060;
   }
   public static final class id {
-    public static final int alpha_floatable=0x7f050000;
-    public static final int alpha_view1=0x7f050001;
-    public static final int alpha_view2=0x7f050002;
-    public static final int arrow_left_btn=0x7f050003;
-    public static final int arrow_right_btn=0x7f050004;
-    public static final int candidate_flipper=0x7f050005;
-    public static final int candidate_view1=0x7f050006;
-    public static final int candidate_view2=0x7f050007;
-    public static final int candidates_container=0x7f050008;
-    public static final int composing_view=0x7f050009;
-    public static final int floating_container=0x7f05000a;
+    public static final int alpha_floatable=0x7f060000;
+    public static final int alpha_view1=0x7f060001;
+    public static final int alpha_view2=0x7f060002;
+    public static final int arrow_left_btn=0x7f060003;
+    public static final int arrow_right_btn=0x7f060004;
+    public static final int barrier=0x7f060005;
+    public static final int bottom=0x7f060006;
+    public static final int btn_switch=0x7f060007;
+    public static final int candidate_flipper=0x7f060008;
+    public static final int candidate_view1=0x7f060009;
+    public static final int candidate_view2=0x7f06000a;
+    public static final int candidates_container=0x7f06000b;
+    public static final int chains=0x7f06000c;
+    public static final int composing_view=0x7f06000d;
+    public static final int dimensions=0x7f06000e;
+    public static final int direct=0x7f06000f;
+    public static final int end=0x7f060010;
+    public static final int floating_container=0x7f060011;
+    public static final int gone=0x7f060012;
+    public static final int invisible=0x7f060013;
+    public static final int left=0x7f060014;
+    public static final int my_soft_keyboard_view=0x7f060015;
+    public static final int none=0x7f060016;
+    public static final int packed=0x7f060017;
+    public static final int parent=0x7f060018;
+    public static final int percent=0x7f060019;
+    public static final int right=0x7f06001a;
+    public static final int spread=0x7f06001b;
+    public static final int spread_inside=0x7f06001c;
+    public static final int standard=0x7f06001d;
+    public static final int start=0x7f06001e;
+    public static final int top=0x7f06001f;
+    public static final int wrap=0x7f060020;
   }
   public static final class layout {
-    public static final int candidates_container=0x7f060000;
-    public static final int floating_container=0x7f060001;
-    public static final int skb_container=0x7f060002;
+    public static final int activity_main=0x7f070000;
+    public static final int candidates_container=0x7f070001;
+    public static final int floating_container=0x7f070002;
+    public static final int skb_container=0x7f070003;
   }
   public static final class raw {
-    public static final int dict_pinyin=0x7f070000;
+    public static final int dict_pinyin=0x7f080000;
   }
   public static final class string {
-    public static final int ime_name=0x7f080000;
-    public static final int ime_settings_activity_name=0x7f080001;
-    public static final int setting=0x7f080002;
-    public static final int setting_advanced_key=0x7f080003;
-    public static final int setting_disabled=0x7f080004;
-    public static final int setting_enabled=0x7f080005;
-    public static final int setting_others=0x7f080006;
-    public static final int setting_others_summary=0x7f080007;
-    public static final int setting_prediction_key=0x7f080008;
-    public static final int setting_prediction_title=0x7f080009;
-    public static final int setting_sound_key=0x7f08000a;
-    public static final int setting_sound_key_title=0x7f08000b;
-    public static final int setting_switch_key=0x7f08000c;
-    public static final int setting_switch_shift_space_title=0x7f08000d;
-    public static final int setting_switch_title=0x7f08000e;
-    public static final int setting_vibrate_key=0x7f08000f;
-    public static final int setting_vibrate_title=0x7f080010;
-    public static final int toggle_cn=0x7f080011;
-    public static final int toggle_cn_cand=0x7f080012;
-    public static final int toggle_en_lower=0x7f080013;
-    public static final int toggle_en_sym1=0x7f080014;
-    public static final int toggle_en_sym2=0x7f080015;
-    public static final int toggle_en_upper=0x7f080016;
-    public static final int toggle_enter_done=0x7f080017;
-    public static final int toggle_enter_go=0x7f080018;
-    public static final int toggle_enter_next=0x7f080019;
-    public static final int toggle_enter_search=0x7f08001a;
-    public static final int toggle_enter_send=0x7f08001b;
-    public static final int toggle_phone_sym=0x7f08001c;
-    public static final int toggle_row_cn=0x7f08001d;
-    public static final int toggle_row_emailaddress=0x7f08001e;
-    public static final int toggle_row_en=0x7f08001f;
-    public static final int toggle_row_uri=0x7f080020;
-    public static final int toggle_smiley=0x7f080021;
-    public static final int version=0x7f080022;
+    public static final int ime_name=0x7f090000;
+    public static final int ime_settings_activity_name=0x7f090001;
+    public static final int setting=0x7f090002;
+    public static final int setting_advanced_key=0x7f090003;
+    public static final int setting_disabled=0x7f090004;
+    public static final int setting_enabled=0x7f090005;
+    public static final int setting_others=0x7f090006;
+    public static final int setting_others_summary=0x7f090007;
+    public static final int setting_prediction_key=0x7f090008;
+    public static final int setting_prediction_title=0x7f090009;
+    public static final int setting_sound_key=0x7f09000a;
+    public static final int setting_sound_key_title=0x7f09000b;
+    public static final int setting_switch_key=0x7f09000c;
+    public static final int setting_switch_shift_space_title=0x7f09000d;
+    public static final int setting_switch_title=0x7f09000e;
+    public static final int setting_vibrate_key=0x7f09000f;
+    public static final int setting_vibrate_title=0x7f090010;
+    public static final int toggle_cn=0x7f090011;
+    public static final int toggle_cn_cand=0x7f090012;
+    public static final int toggle_en_lower=0x7f090013;
+    public static final int toggle_en_sym1=0x7f090014;
+    public static final int toggle_en_sym2=0x7f090015;
+    public static final int toggle_en_upper=0x7f090016;
+    public static final int toggle_enter_done=0x7f090017;
+    public static final int toggle_enter_go=0x7f090018;
+    public static final int toggle_enter_next=0x7f090019;
+    public static final int toggle_enter_search=0x7f09001a;
+    public static final int toggle_enter_send=0x7f09001b;
+    public static final int toggle_phone_sym=0x7f09001c;
+    public static final int toggle_row_cn=0x7f09001d;
+    public static final int toggle_row_emailaddress=0x7f09001e;
+    public static final int toggle_row_en=0x7f09001f;
+    public static final int toggle_row_uri=0x7f090020;
+    public static final int toggle_smiley=0x7f090021;
+    public static final int version=0x7f090022;
+  }
+  public static final class styleable {
+    /**
+     * Attributes that can be used with a ConstraintLayout_Layout.
+     * <p>Includes the following attributes:</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Attribute</th><th>Description</th></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_android_orientation android:orientation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_android_maxWidth android:maxWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_android_maxHeight android:maxHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_android_minWidth android:minWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_android_minHeight android:minHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_barrierAllowsGoneWidgets com.android.inputmethod.pinyin:barrierAllowsGoneWidgets}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_barrierDirection com.android.inputmethod.pinyin:barrierDirection}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_chainUseRtl com.android.inputmethod.pinyin:chainUseRtl}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_constraintSet com.android.inputmethod.pinyin:constraintSet}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_constraint_referenced_ids com.android.inputmethod.pinyin:constraint_referenced_ids}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constrainedHeight com.android.inputmethod.pinyin:layout_constrainedHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constrainedWidth com.android.inputmethod.pinyin:layout_constrainedWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBaseline_creator com.android.inputmethod.pinyin:layout_constraintBaseline_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBaseline_toBaselineOf com.android.inputmethod.pinyin:layout_constraintBaseline_toBaselineOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBottom_creator com.android.inputmethod.pinyin:layout_constraintBottom_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBottom_toBottomOf com.android.inputmethod.pinyin:layout_constraintBottom_toBottomOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBottom_toTopOf com.android.inputmethod.pinyin:layout_constraintBottom_toTopOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintCircle com.android.inputmethod.pinyin:layout_constraintCircle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintCircleAngle com.android.inputmethod.pinyin:layout_constraintCircleAngle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintCircleRadius com.android.inputmethod.pinyin:layout_constraintCircleRadius}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintDimensionRatio com.android.inputmethod.pinyin:layout_constraintDimensionRatio}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintEnd_toEndOf com.android.inputmethod.pinyin:layout_constraintEnd_toEndOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintEnd_toStartOf com.android.inputmethod.pinyin:layout_constraintEnd_toStartOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintGuide_begin com.android.inputmethod.pinyin:layout_constraintGuide_begin}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintGuide_end com.android.inputmethod.pinyin:layout_constraintGuide_end}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintGuide_percent com.android.inputmethod.pinyin:layout_constraintGuide_percent}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHeight_default com.android.inputmethod.pinyin:layout_constraintHeight_default}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHeight_max com.android.inputmethod.pinyin:layout_constraintHeight_max}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHeight_min com.android.inputmethod.pinyin:layout_constraintHeight_min}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHeight_percent com.android.inputmethod.pinyin:layout_constraintHeight_percent}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHorizontal_bias com.android.inputmethod.pinyin:layout_constraintHorizontal_bias}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHorizontal_chainStyle com.android.inputmethod.pinyin:layout_constraintHorizontal_chainStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHorizontal_weight com.android.inputmethod.pinyin:layout_constraintHorizontal_weight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintLeft_creator com.android.inputmethod.pinyin:layout_constraintLeft_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintLeft_toLeftOf com.android.inputmethod.pinyin:layout_constraintLeft_toLeftOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintLeft_toRightOf com.android.inputmethod.pinyin:layout_constraintLeft_toRightOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintRight_creator com.android.inputmethod.pinyin:layout_constraintRight_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintRight_toLeftOf com.android.inputmethod.pinyin:layout_constraintRight_toLeftOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintRight_toRightOf com.android.inputmethod.pinyin:layout_constraintRight_toRightOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintStart_toEndOf com.android.inputmethod.pinyin:layout_constraintStart_toEndOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintStart_toStartOf com.android.inputmethod.pinyin:layout_constraintStart_toStartOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintTop_creator com.android.inputmethod.pinyin:layout_constraintTop_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintTop_toBottomOf com.android.inputmethod.pinyin:layout_constraintTop_toBottomOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintTop_toTopOf com.android.inputmethod.pinyin:layout_constraintTop_toTopOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintVertical_bias com.android.inputmethod.pinyin:layout_constraintVertical_bias}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintVertical_chainStyle com.android.inputmethod.pinyin:layout_constraintVertical_chainStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintVertical_weight com.android.inputmethod.pinyin:layout_constraintVertical_weight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintWidth_default com.android.inputmethod.pinyin:layout_constraintWidth_default}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintWidth_max com.android.inputmethod.pinyin:layout_constraintWidth_max}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintWidth_min com.android.inputmethod.pinyin:layout_constraintWidth_min}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintWidth_percent com.android.inputmethod.pinyin:layout_constraintWidth_percent}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_editor_absoluteX com.android.inputmethod.pinyin:layout_editor_absoluteX}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_editor_absoluteY com.android.inputmethod.pinyin:layout_editor_absoluteY}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginBottom com.android.inputmethod.pinyin:layout_goneMarginBottom}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginEnd com.android.inputmethod.pinyin:layout_goneMarginEnd}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginLeft com.android.inputmethod.pinyin:layout_goneMarginLeft}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginRight com.android.inputmethod.pinyin:layout_goneMarginRight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginStart com.android.inputmethod.pinyin:layout_goneMarginStart}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginTop com.android.inputmethod.pinyin:layout_goneMarginTop}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_optimizationLevel com.android.inputmethod.pinyin:layout_optimizationLevel}</code></td><td></td></tr>
+     * </table>
+     * @see #ConstraintLayout_Layout_android_orientation
+     * @see #ConstraintLayout_Layout_android_maxWidth
+     * @see #ConstraintLayout_Layout_android_maxHeight
+     * @see #ConstraintLayout_Layout_android_minWidth
+     * @see #ConstraintLayout_Layout_android_minHeight
+     * @see #ConstraintLayout_Layout_barrierAllowsGoneWidgets
+     * @see #ConstraintLayout_Layout_barrierDirection
+     * @see #ConstraintLayout_Layout_chainUseRtl
+     * @see #ConstraintLayout_Layout_constraintSet
+     * @see #ConstraintLayout_Layout_constraint_referenced_ids
+     * @see #ConstraintLayout_Layout_layout_constrainedHeight
+     * @see #ConstraintLayout_Layout_layout_constrainedWidth
+     * @see #ConstraintLayout_Layout_layout_constraintBaseline_creator
+     * @see #ConstraintLayout_Layout_layout_constraintBaseline_toBaselineOf
+     * @see #ConstraintLayout_Layout_layout_constraintBottom_creator
+     * @see #ConstraintLayout_Layout_layout_constraintBottom_toBottomOf
+     * @see #ConstraintLayout_Layout_layout_constraintBottom_toTopOf
+     * @see #ConstraintLayout_Layout_layout_constraintCircle
+     * @see #ConstraintLayout_Layout_layout_constraintCircleAngle
+     * @see #ConstraintLayout_Layout_layout_constraintCircleRadius
+     * @see #ConstraintLayout_Layout_layout_constraintDimensionRatio
+     * @see #ConstraintLayout_Layout_layout_constraintEnd_toEndOf
+     * @see #ConstraintLayout_Layout_layout_constraintEnd_toStartOf
+     * @see #ConstraintLayout_Layout_layout_constraintGuide_begin
+     * @see #ConstraintLayout_Layout_layout_constraintGuide_end
+     * @see #ConstraintLayout_Layout_layout_constraintGuide_percent
+     * @see #ConstraintLayout_Layout_layout_constraintHeight_default
+     * @see #ConstraintLayout_Layout_layout_constraintHeight_max
+     * @see #ConstraintLayout_Layout_layout_constraintHeight_min
+     * @see #ConstraintLayout_Layout_layout_constraintHeight_percent
+     * @see #ConstraintLayout_Layout_layout_constraintHorizontal_bias
+     * @see #ConstraintLayout_Layout_layout_constraintHorizontal_chainStyle
+     * @see #ConstraintLayout_Layout_layout_constraintHorizontal_weight
+     * @see #ConstraintLayout_Layout_layout_constraintLeft_creator
+     * @see #ConstraintLayout_Layout_layout_constraintLeft_toLeftOf
+     * @see #ConstraintLayout_Layout_layout_constraintLeft_toRightOf
+     * @see #ConstraintLayout_Layout_layout_constraintRight_creator
+     * @see #ConstraintLayout_Layout_layout_constraintRight_toLeftOf
+     * @see #ConstraintLayout_Layout_layout_constraintRight_toRightOf
+     * @see #ConstraintLayout_Layout_layout_constraintStart_toEndOf
+     * @see #ConstraintLayout_Layout_layout_constraintStart_toStartOf
+     * @see #ConstraintLayout_Layout_layout_constraintTop_creator
+     * @see #ConstraintLayout_Layout_layout_constraintTop_toBottomOf
+     * @see #ConstraintLayout_Layout_layout_constraintTop_toTopOf
+     * @see #ConstraintLayout_Layout_layout_constraintVertical_bias
+     * @see #ConstraintLayout_Layout_layout_constraintVertical_chainStyle
+     * @see #ConstraintLayout_Layout_layout_constraintVertical_weight
+     * @see #ConstraintLayout_Layout_layout_constraintWidth_default
+     * @see #ConstraintLayout_Layout_layout_constraintWidth_max
+     * @see #ConstraintLayout_Layout_layout_constraintWidth_min
+     * @see #ConstraintLayout_Layout_layout_constraintWidth_percent
+     * @see #ConstraintLayout_Layout_layout_editor_absoluteX
+     * @see #ConstraintLayout_Layout_layout_editor_absoluteY
+     * @see #ConstraintLayout_Layout_layout_goneMarginBottom
+     * @see #ConstraintLayout_Layout_layout_goneMarginEnd
+     * @see #ConstraintLayout_Layout_layout_goneMarginLeft
+     * @see #ConstraintLayout_Layout_layout_goneMarginRight
+     * @see #ConstraintLayout_Layout_layout_goneMarginStart
+     * @see #ConstraintLayout_Layout_layout_goneMarginTop
+     * @see #ConstraintLayout_Layout_layout_optimizationLevel
+     */
+    public static final int[] ConstraintLayout_Layout={
+        0x010100c4, 0x0101011f, 0x01010120, 0x0101013f, 
+        0x01010140, 0x7f010000, 0x7f010001, 0x7f010002, 
+        0x7f010003, 0x7f010004, 0x7f010007, 0x7f010008, 
+        0x7f010009, 0x7f01000a, 0x7f01000b, 0x7f01000c, 
+        0x7f01000d, 0x7f01000e, 0x7f01000f, 0x7f010010, 
+        0x7f010011, 0x7f010012, 0x7f010013, 0x7f010014, 
+        0x7f010015, 0x7f010016, 0x7f010017, 0x7f010018, 
+        0x7f010019, 0x7f01001a, 0x7f01001b, 0x7f01001c, 
+        0x7f01001d, 0x7f01001e, 0x7f01001f, 0x7f010020, 
+        0x7f010021, 0x7f010022, 0x7f010023, 0x7f010024, 
+        0x7f010025, 0x7f010026, 0x7f010027, 0x7f010028, 
+        0x7f010029, 0x7f01002a, 0x7f01002b, 0x7f01002c, 
+        0x7f01002d, 0x7f01002e, 0x7f01002f, 0x7f010030, 
+        0x7f010031, 0x7f010032, 0x7f010033, 0x7f010034, 
+        0x7f010035, 0x7f010036, 0x7f010037, 0x7f010038
+      };
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#maxHeight}
+     * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name android:maxHeight
+     */
+    public static final int ConstraintLayout_Layout_android_maxHeight=2;
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#maxWidth}
+     * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name android:maxWidth
+     */
+    public static final int ConstraintLayout_Layout_android_maxWidth=1;
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#minHeight}
+     * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name android:minHeight
+     */
+    public static final int ConstraintLayout_Layout_android_minHeight=4;
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#minWidth}
+     * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name android:minWidth
+     */
+    public static final int ConstraintLayout_Layout_android_minWidth=3;
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#orientation}
+     * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
+     *
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>horizontal</td><td>0</td><td></td></tr>
+     * <tr><td>vertical</td><td>1</td><td></td></tr>
+     * </table>
+     *
+     * @attr name android:orientation
+     */
+    public static final int ConstraintLayout_Layout_android_orientation=0;
+    /**
+     * <p>This symbol is the offset where the {@link com.android.inputmethod.pinyin.R.attr#barrierAllowsGoneWidgets}
+     * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
+     *
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     *
+     * @attr name com.android.inputmethod.pinyin:barrierAllowsGoneWidgets
+     */
+    public static final int ConstraintLayout_Layout_barrierAllowsGoneWidgets=5;
+    /**
+     * <p>This symbol is the offset where the {@link com.android.inputmethod.pinyin.R.attr#barrierDirection}
+     * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
+     *
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>bottom</td><td>3</td><td></td></tr>
+     * <tr><td>end</td><td>6</td><td></td></tr>
+     * <tr><td>left</td><td>0</td><td></td></tr>
+     * <tr><td>right</td><td>1</td><td></td></tr>
+     * <tr><td>start</td><td>5</td><td></td></tr>
+     * <tr><td>top</td><td>2</td><td></td></tr>
+     * </table>
+     *
+     * @attr name com.android.inputmethod.pinyin:barrierDirection
+     */
+    public static final int ConstraintLayout_Layout_barrierDirection=6;
+    /**
+     * <p>This symbol is the offset where the {@link com.android.inputmethod.pinyin.R.attr#chainUseRtl}
+     * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
+     *
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     *
+     * @attr name com.android.inputmethod.pinyin:chainUseRtl
+     */
+    public static final int ConstraintLayout_Layout_chainUseRtl=7;
+    /**
+     * <p>This symbol is the offset where the {@link com.android.inputmethod.pinyin.R.attr#constraintSet}
+     * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
+     *
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     *
+     * @attr name com.android.inputmethod.pinyin:constraintSet
+     */
+    public static final int ConstraintLayout_Layout_constraintSet=8;
+    /**
+     * <p>This symbol is the offset where the {@link com.android.inputmethod.pinyin.R.attr#constraint_referenced_ids}
+     * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
+     *
+     * <p>May be a string value, using '\\;' to escape characters such as
+     * '\\n' or '\\uxxxx' for a unicode character;
+     *
+     * @attr name com.android.inputmethod.pinyin:constraint_referenced_ids
+     */
+    public static final int ConstraintLayout_Layout_constraint_referenced_ids=9;
+    /**
+     * <p>This symbol is the offset where the {@link com.android.inputmethod.pinyin.R.attr#layout_constrainedHeight}
+     * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
+     *
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     *
+     * @attr name com.android.inputmethod.pinyin:layout_constrainedHeight
+     */
+    public static final int ConstraintLayout_Layout_layout_constrainedHeight=10;
+    /**
+     * <p>This symbol is the offset where the {@link com.android.inputmethod.pinyin.R.attr#layout_constrainedWidth}
+     * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
+     *
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     *
+     * @attr name com.android.inputmethod.pinyin:layout_constrainedWidth
+     */
+    public static final int ConstraintLayout_Layout_layout_constrainedWidth=11;
+    /**
+     * <p>This symbol is the offset where the {@link com.android.inputmethod.pinyin.R.attr#layout_constraintBaseline_creator}
+     * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
+     *
+     * <p>May be an integer value, such as "<code>100</code>".
+     *
+     * @attr name com.android.inputmethod.pinyin:layout_constraintBaseline_creator
+     */
+    public static final int ConstraintLayout_Layout_layout_constraintBaseline_creator=12;
+    /**
+     * <p>This symbol is the offset where the {@link com.android.inputmethod.pinyin.R.attr#layout_constraintBaseline_toBaselineOf}
+     * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
+     *
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>parent</td><td>0</td><td></td></tr>
+     * </table>
+     *
+     * @attr name com.android.inputmethod.pinyin:layout_constraintBaseline_toBaselineOf
+     */
+    public static final int ConstraintLayout_Layout_layout_constraintBaseline_toBaselineOf=13;
+    /**
+     * <p>This symbol is the offset where the {@link com.android.inputmethod.pinyin.R.attr#layout_constraintBottom_creator}
+     * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
+     *
+     * <p>May be an integer value, such as "<code>100</code>".
+     *
+     * @attr name com.android.inputmethod.pinyin:layout_constraintBottom_creator
+     */
+    public static final int ConstraintLayout_Layout_layout_constraintBottom_creator=14;
+    /**
+     * <p>This symbol is the offset where the {@link com.android.inputmethod.pinyin.R.attr#layout_constraintBottom_toBottomOf}
+     * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
+     *
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>parent</td><td>0</td><td></td></tr>
+     * </table>
+     *
+     * @attr name com.android.inputmethod.pinyin:layout_constraintBottom_toBottomOf
+     */
+    public static final int ConstraintLayout_Layout_layout_constraintBottom_toBottomOf=15;
+    /**
+     * <p>This symbol is the offset where the {@link com.android.inputmethod.pinyin.R.attr#layout_constraintBottom_toTopOf}
+     * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
+     *
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>parent</td><td>0</td><td></td></tr>
+     * </table>
+     *
+     * @attr name com.android.inputmethod.pinyin:layout_constraintBottom_toTopOf
+     */
+    public static final int ConstraintLayout_Layout_layout_constraintBottom_toTopOf=16;
+    /**
+     * <p>This symbol is the offset where the {@link com.android.inputmethod.pinyin.R.attr#layout_constraintCircle}
+     * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
+     *
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     *
+     * @attr name com.android.inputmethod.pinyin:layout_constraintCircle
+     */
+    public static final int ConstraintLayout_Layout_layout_constraintCircle=17;
+    /**
+     * <p>This symbol is the offset where the {@link com.android.inputmethod.pinyin.R.attr#layout_constraintCircleAngle}
+     * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
+     *
+     * <p>May be an integer value, such as "<code>100</code>".
+     *
+     * @attr name com.android.inputmethod.pinyin:layout_constraintCircleAngle
+     */
+    public static final int ConstraintLayout_Layout_layout_constraintCircleAngle=18;
+    /**
+     * <p>This symbol is the offset where the {@link com.android.inputmethod.pinyin.R.attr#layout_constraintCircleRadius}
+     * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name com.android.inputmethod.pinyin:layout_constraintCircleRadius
+     */
+    public static final int ConstraintLayout_Layout_layout_constraintCircleRadius=19;
+    /**
+     * <p>This symbol is the offset where the {@link com.android.inputmethod.pinyin.R.attr#layout_constraintDimensionRatio}
+     * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
+     *
+     * <p>May be a string value, using '\\;' to escape characters such as
+     * '\\n' or '\\uxxxx' for a unicode character;
+     *
+     * @attr name com.android.inputmethod.pinyin:layout_constraintDimensionRatio
+     */
+    public static final int ConstraintLayout_Layout_layout_constraintDimensionRatio=20;
+    /**
+     * <p>This symbol is the offset where the {@link com.android.inputmethod.pinyin.R.attr#layout_constraintEnd_toEndOf}
+     * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
+     *
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>parent</td><td>0</td><td></td></tr>
+     * </table>
+     *
+     * @attr name com.android.inputmethod.pinyin:layout_constraintEnd_toEndOf
+     */
+    public static final int ConstraintLayout_Layout_layout_constraintEnd_toEndOf=21;
+    /**
+     * <p>This symbol is the offset where the {@link com.android.inputmethod.pinyin.R.attr#layout_constraintEnd_toStartOf}
+     * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
+     *
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>parent</td><td>0</td><td></td></tr>
+     * </table>
+     *
+     * @attr name com.android.inputmethod.pinyin:layout_constraintEnd_toStartOf
+     */
+    public static final int ConstraintLayout_Layout_layout_constraintEnd_toStartOf=22;
+    /**
+     * <p>This symbol is the offset where the {@link com.android.inputmethod.pinyin.R.attr#layout_constraintGuide_begin}
+     * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name com.android.inputmethod.pinyin:layout_constraintGuide_begin
+     */
+    public static final int ConstraintLayout_Layout_layout_constraintGuide_begin=23;
+    /**
+     * <p>This symbol is the offset where the {@link com.android.inputmethod.pinyin.R.attr#layout_constraintGuide_end}
+     * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name com.android.inputmethod.pinyin:layout_constraintGuide_end
+     */
+    public static final int ConstraintLayout_Layout_layout_constraintGuide_end=24;
+    /**
+     * <p>This symbol is the offset where the {@link com.android.inputmethod.pinyin.R.attr#layout_constraintGuide_percent}
+     * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name com.android.inputmethod.pinyin:layout_constraintGuide_percent
+     */
+    public static final int ConstraintLayout_Layout_layout_constraintGuide_percent=25;
+    /**
+     * <p>This symbol is the offset where the {@link com.android.inputmethod.pinyin.R.attr#layout_constraintHeight_default}
+     * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
+     *
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>percent</td><td>2</td><td></td></tr>
+     * <tr><td>spread</td><td>0</td><td></td></tr>
+     * <tr><td>wrap</td><td>1</td><td></td></tr>
+     * </table>
+     *
+     * @attr name com.android.inputmethod.pinyin:layout_constraintHeight_default
+     */
+    public static final int ConstraintLayout_Layout_layout_constraintHeight_default=26;
+    /**
+     * <p>This symbol is the offset where the {@link com.android.inputmethod.pinyin.R.attr#layout_constraintHeight_max}
+     * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>wrap</td><td>fffffffe</td><td></td></tr>
+     * </table>
+     *
+     * @attr name com.android.inputmethod.pinyin:layout_constraintHeight_max
+     */
+    public static final int ConstraintLayout_Layout_layout_constraintHeight_max=27;
+    /**
+     * <p>This symbol is the offset where the {@link com.android.inputmethod.pinyin.R.attr#layout_constraintHeight_min}
+     * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>wrap</td><td>fffffffe</td><td></td></tr>
+     * </table>
+     *
+     * @attr name com.android.inputmethod.pinyin:layout_constraintHeight_min
+     */
+    public static final int ConstraintLayout_Layout_layout_constraintHeight_min=28;
+    /**
+     * <p>This symbol is the offset where the {@link com.android.inputmethod.pinyin.R.attr#layout_constraintHeight_percent}
+     * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name com.android.inputmethod.pinyin:layout_constraintHeight_percent
+     */
+    public static final int ConstraintLayout_Layout_layout_constraintHeight_percent=29;
+    /**
+     * <p>This symbol is the offset where the {@link com.android.inputmethod.pinyin.R.attr#layout_constraintHorizontal_bias}
+     * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name com.android.inputmethod.pinyin:layout_constraintHorizontal_bias
+     */
+    public static final int ConstraintLayout_Layout_layout_constraintHorizontal_bias=30;
+    /**
+     * <p>This symbol is the offset where the {@link com.android.inputmethod.pinyin.R.attr#layout_constraintHorizontal_chainStyle}
+     * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
+     *
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>packed</td><td>2</td><td></td></tr>
+     * <tr><td>spread</td><td>0</td><td></td></tr>
+     * <tr><td>spread_inside</td><td>1</td><td></td></tr>
+     * </table>
+     *
+     * @attr name com.android.inputmethod.pinyin:layout_constraintHorizontal_chainStyle
+     */
+    public static final int ConstraintLayout_Layout_layout_constraintHorizontal_chainStyle=31;
+    /**
+     * <p>This symbol is the offset where the {@link com.android.inputmethod.pinyin.R.attr#layout_constraintHorizontal_weight}
+     * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name com.android.inputmethod.pinyin:layout_constraintHorizontal_weight
+     */
+    public static final int ConstraintLayout_Layout_layout_constraintHorizontal_weight=32;
+    /**
+     * <p>This symbol is the offset where the {@link com.android.inputmethod.pinyin.R.attr#layout_constraintLeft_creator}
+     * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
+     *
+     * <p>May be an integer value, such as "<code>100</code>".
+     *
+     * @attr name com.android.inputmethod.pinyin:layout_constraintLeft_creator
+     */
+    public static final int ConstraintLayout_Layout_layout_constraintLeft_creator=33;
+    /**
+     * <p>This symbol is the offset where the {@link com.android.inputmethod.pinyin.R.attr#layout_constraintLeft_toLeftOf}
+     * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
+     *
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>parent</td><td>0</td><td></td></tr>
+     * </table>
+     *
+     * @attr name com.android.inputmethod.pinyin:layout_constraintLeft_toLeftOf
+     */
+    public static final int ConstraintLayout_Layout_layout_constraintLeft_toLeftOf=34;
+    /**
+     * <p>This symbol is the offset where the {@link com.android.inputmethod.pinyin.R.attr#layout_constraintLeft_toRightOf}
+     * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
+     *
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>parent</td><td>0</td><td></td></tr>
+     * </table>
+     *
+     * @attr name com.android.inputmethod.pinyin:layout_constraintLeft_toRightOf
+     */
+    public static final int ConstraintLayout_Layout_layout_constraintLeft_toRightOf=35;
+    /**
+     * <p>This symbol is the offset where the {@link com.android.inputmethod.pinyin.R.attr#layout_constraintRight_creator}
+     * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
+     *
+     * <p>May be an integer value, such as "<code>100</code>".
+     *
+     * @attr name com.android.inputmethod.pinyin:layout_constraintRight_creator
+     */
+    public static final int ConstraintLayout_Layout_layout_constraintRight_creator=36;
+    /**
+     * <p>This symbol is the offset where the {@link com.android.inputmethod.pinyin.R.attr#layout_constraintRight_toLeftOf}
+     * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
+     *
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>parent</td><td>0</td><td></td></tr>
+     * </table>
+     *
+     * @attr name com.android.inputmethod.pinyin:layout_constraintRight_toLeftOf
+     */
+    public static final int ConstraintLayout_Layout_layout_constraintRight_toLeftOf=37;
+    /**
+     * <p>This symbol is the offset where the {@link com.android.inputmethod.pinyin.R.attr#layout_constraintRight_toRightOf}
+     * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
+     *
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>parent</td><td>0</td><td></td></tr>
+     * </table>
+     *
+     * @attr name com.android.inputmethod.pinyin:layout_constraintRight_toRightOf
+     */
+    public static final int ConstraintLayout_Layout_layout_constraintRight_toRightOf=38;
+    /**
+     * <p>This symbol is the offset where the {@link com.android.inputmethod.pinyin.R.attr#layout_constraintStart_toEndOf}
+     * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
+     *
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>parent</td><td>0</td><td></td></tr>
+     * </table>
+     *
+     * @attr name com.android.inputmethod.pinyin:layout_constraintStart_toEndOf
+     */
+    public static final int ConstraintLayout_Layout_layout_constraintStart_toEndOf=39;
+    /**
+     * <p>This symbol is the offset where the {@link com.android.inputmethod.pinyin.R.attr#layout_constraintStart_toStartOf}
+     * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
+     *
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>parent</td><td>0</td><td></td></tr>
+     * </table>
+     *
+     * @attr name com.android.inputmethod.pinyin:layout_constraintStart_toStartOf
+     */
+    public static final int ConstraintLayout_Layout_layout_constraintStart_toStartOf=40;
+    /**
+     * <p>This symbol is the offset where the {@link com.android.inputmethod.pinyin.R.attr#layout_constraintTop_creator}
+     * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
+     *
+     * <p>May be an integer value, such as "<code>100</code>".
+     *
+     * @attr name com.android.inputmethod.pinyin:layout_constraintTop_creator
+     */
+    public static final int ConstraintLayout_Layout_layout_constraintTop_creator=41;
+    /**
+     * <p>This symbol is the offset where the {@link com.android.inputmethod.pinyin.R.attr#layout_constraintTop_toBottomOf}
+     * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
+     *
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>parent</td><td>0</td><td></td></tr>
+     * </table>
+     *
+     * @attr name com.android.inputmethod.pinyin:layout_constraintTop_toBottomOf
+     */
+    public static final int ConstraintLayout_Layout_layout_constraintTop_toBottomOf=42;
+    /**
+     * <p>This symbol is the offset where the {@link com.android.inputmethod.pinyin.R.attr#layout_constraintTop_toTopOf}
+     * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
+     *
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>parent</td><td>0</td><td></td></tr>
+     * </table>
+     *
+     * @attr name com.android.inputmethod.pinyin:layout_constraintTop_toTopOf
+     */
+    public static final int ConstraintLayout_Layout_layout_constraintTop_toTopOf=43;
+    /**
+     * <p>This symbol is the offset where the {@link com.android.inputmethod.pinyin.R.attr#layout_constraintVertical_bias}
+     * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name com.android.inputmethod.pinyin:layout_constraintVertical_bias
+     */
+    public static final int ConstraintLayout_Layout_layout_constraintVertical_bias=44;
+    /**
+     * <p>This symbol is the offset where the {@link com.android.inputmethod.pinyin.R.attr#layout_constraintVertical_chainStyle}
+     * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
+     *
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>packed</td><td>2</td><td></td></tr>
+     * <tr><td>spread</td><td>0</td><td></td></tr>
+     * <tr><td>spread_inside</td><td>1</td><td></td></tr>
+     * </table>
+     *
+     * @attr name com.android.inputmethod.pinyin:layout_constraintVertical_chainStyle
+     */
+    public static final int ConstraintLayout_Layout_layout_constraintVertical_chainStyle=45;
+    /**
+     * <p>This symbol is the offset where the {@link com.android.inputmethod.pinyin.R.attr#layout_constraintVertical_weight}
+     * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name com.android.inputmethod.pinyin:layout_constraintVertical_weight
+     */
+    public static final int ConstraintLayout_Layout_layout_constraintVertical_weight=46;
+    /**
+     * <p>This symbol is the offset where the {@link com.android.inputmethod.pinyin.R.attr#layout_constraintWidth_default}
+     * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
+     *
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>percent</td><td>2</td><td></td></tr>
+     * <tr><td>spread</td><td>0</td><td></td></tr>
+     * <tr><td>wrap</td><td>1</td><td></td></tr>
+     * </table>
+     *
+     * @attr name com.android.inputmethod.pinyin:layout_constraintWidth_default
+     */
+    public static final int ConstraintLayout_Layout_layout_constraintWidth_default=47;
+    /**
+     * <p>This symbol is the offset where the {@link com.android.inputmethod.pinyin.R.attr#layout_constraintWidth_max}
+     * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>wrap</td><td>fffffffe</td><td></td></tr>
+     * </table>
+     *
+     * @attr name com.android.inputmethod.pinyin:layout_constraintWidth_max
+     */
+    public static final int ConstraintLayout_Layout_layout_constraintWidth_max=48;
+    /**
+     * <p>This symbol is the offset where the {@link com.android.inputmethod.pinyin.R.attr#layout_constraintWidth_min}
+     * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>wrap</td><td>fffffffe</td><td></td></tr>
+     * </table>
+     *
+     * @attr name com.android.inputmethod.pinyin:layout_constraintWidth_min
+     */
+    public static final int ConstraintLayout_Layout_layout_constraintWidth_min=49;
+    /**
+     * <p>This symbol is the offset where the {@link com.android.inputmethod.pinyin.R.attr#layout_constraintWidth_percent}
+     * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name com.android.inputmethod.pinyin:layout_constraintWidth_percent
+     */
+    public static final int ConstraintLayout_Layout_layout_constraintWidth_percent=50;
+    /**
+     * <p>This symbol is the offset where the {@link com.android.inputmethod.pinyin.R.attr#layout_editor_absoluteX}
+     * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name com.android.inputmethod.pinyin:layout_editor_absoluteX
+     */
+    public static final int ConstraintLayout_Layout_layout_editor_absoluteX=51;
+    /**
+     * <p>This symbol is the offset where the {@link com.android.inputmethod.pinyin.R.attr#layout_editor_absoluteY}
+     * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name com.android.inputmethod.pinyin:layout_editor_absoluteY
+     */
+    public static final int ConstraintLayout_Layout_layout_editor_absoluteY=52;
+    /**
+     * <p>This symbol is the offset where the {@link com.android.inputmethod.pinyin.R.attr#layout_goneMarginBottom}
+     * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name com.android.inputmethod.pinyin:layout_goneMarginBottom
+     */
+    public static final int ConstraintLayout_Layout_layout_goneMarginBottom=53;
+    /**
+     * <p>This symbol is the offset where the {@link com.android.inputmethod.pinyin.R.attr#layout_goneMarginEnd}
+     * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name com.android.inputmethod.pinyin:layout_goneMarginEnd
+     */
+    public static final int ConstraintLayout_Layout_layout_goneMarginEnd=54;
+    /**
+     * <p>This symbol is the offset where the {@link com.android.inputmethod.pinyin.R.attr#layout_goneMarginLeft}
+     * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name com.android.inputmethod.pinyin:layout_goneMarginLeft
+     */
+    public static final int ConstraintLayout_Layout_layout_goneMarginLeft=55;
+    /**
+     * <p>This symbol is the offset where the {@link com.android.inputmethod.pinyin.R.attr#layout_goneMarginRight}
+     * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name com.android.inputmethod.pinyin:layout_goneMarginRight
+     */
+    public static final int ConstraintLayout_Layout_layout_goneMarginRight=56;
+    /**
+     * <p>This symbol is the offset where the {@link com.android.inputmethod.pinyin.R.attr#layout_goneMarginStart}
+     * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name com.android.inputmethod.pinyin:layout_goneMarginStart
+     */
+    public static final int ConstraintLayout_Layout_layout_goneMarginStart=57;
+    /**
+     * <p>This symbol is the offset where the {@link com.android.inputmethod.pinyin.R.attr#layout_goneMarginTop}
+     * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name com.android.inputmethod.pinyin:layout_goneMarginTop
+     */
+    public static final int ConstraintLayout_Layout_layout_goneMarginTop=58;
+    /**
+     * <p>This symbol is the offset where the {@link com.android.inputmethod.pinyin.R.attr#layout_optimizationLevel}
+     * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
+     *
+     * <p>Must be one or more (separated by '|') of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>barrier</td><td>2</td><td></td></tr>
+     * <tr><td>chains</td><td>4</td><td></td></tr>
+     * <tr><td>dimensions</td><td>8</td><td></td></tr>
+     * <tr><td>direct</td><td>1</td><td>for now only direct & barriers</td></tr>
+     * <tr><td>none</td><td>0</td><td></td></tr>
+     * <tr><td>standard</td><td>3</td><td></td></tr>
+     * </table>
+     *
+     * @attr name com.android.inputmethod.pinyin:layout_optimizationLevel
+     */
+    public static final int ConstraintLayout_Layout_layout_optimizationLevel=59;
+    /**
+     * Attributes that can be used with a ConstraintLayout_placeholder.
+     * <p>Includes the following attributes:</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Attribute</th><th>Description</th></tr>
+     * <tr><td><code>{@link #ConstraintLayout_placeholder_content com.android.inputmethod.pinyin:content}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_placeholder_emptyVisibility com.android.inputmethod.pinyin:emptyVisibility}</code></td><td></td></tr>
+     * </table>
+     * @see #ConstraintLayout_placeholder_content
+     * @see #ConstraintLayout_placeholder_emptyVisibility
+     */
+    public static final int[] ConstraintLayout_placeholder={
+        0x7f010005, 0x7f010006
+      };
+    /**
+     * <p>This symbol is the offset where the {@link com.android.inputmethod.pinyin.R.attr#content}
+     * attribute's value can be found in the {@link #ConstraintLayout_placeholder} array.
+     *
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     *
+     * @attr name com.android.inputmethod.pinyin:content
+     */
+    public static final int ConstraintLayout_placeholder_content=0;
+    /**
+     * <p>This symbol is the offset where the {@link com.android.inputmethod.pinyin.R.attr#emptyVisibility}
+     * attribute's value can be found in the {@link #ConstraintLayout_placeholder} array.
+     *
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>gone</td><td>0</td><td></td></tr>
+     * <tr><td>invisible</td><td>1</td><td></td></tr>
+     * </table>
+     *
+     * @attr name com.android.inputmethod.pinyin:emptyVisibility
+     */
+    public static final int ConstraintLayout_placeholder_emptyVisibility=1;
+    /**
+     * Attributes that can be used with a ConstraintSet.
+     * <p>Includes the following attributes:</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Attribute</th><th>Description</th></tr>
+     * <tr><td><code>{@link #ConstraintSet_android_orientation android:orientation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_android_id android:id}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_android_visibility android:visibility}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_android_layout_width android:layout_width}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_android_layout_height android:layout_height}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_android_layout_marginLeft android:layout_marginLeft}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_android_layout_marginTop android:layout_marginTop}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_android_layout_marginRight android:layout_marginRight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_android_layout_marginBottom android:layout_marginBottom}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_android_alpha android:alpha}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_android_transformPivotX android:transformPivotX}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_android_transformPivotY android:transformPivotY}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_android_translationX android:translationX}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_android_translationY android:translationY}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_android_scaleX android:scaleX}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_android_scaleY android:scaleY}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_android_rotation android:rotation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_android_rotationX android:rotationX}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_android_rotationY android:rotationY}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_android_layout_marginStart android:layout_marginStart}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_android_layout_marginEnd android:layout_marginEnd}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_android_translationZ android:translationZ}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_android_elevation android:elevation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constrainedHeight com.android.inputmethod.pinyin:layout_constrainedHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constrainedWidth com.android.inputmethod.pinyin:layout_constrainedWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintBaseline_creator com.android.inputmethod.pinyin:layout_constraintBaseline_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintBaseline_toBaselineOf com.android.inputmethod.pinyin:layout_constraintBaseline_toBaselineOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintBottom_creator com.android.inputmethod.pinyin:layout_constraintBottom_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintBottom_toBottomOf com.android.inputmethod.pinyin:layout_constraintBottom_toBottomOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintBottom_toTopOf com.android.inputmethod.pinyin:layout_constraintBottom_toTopOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintCircle com.android.inputmethod.pinyin:layout_constraintCircle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintCircleAngle com.android.inputmethod.pinyin:layout_constraintCircleAngle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintCircleRadius com.android.inputmethod.pinyin:layout_constraintCircleRadius}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintDimensionRatio com.android.inputmethod.pinyin:layout_constraintDimensionRatio}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintEnd_toEndOf com.android.inputmethod.pinyin:layout_constraintEnd_toEndOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintEnd_toStartOf com.android.inputmethod.pinyin:layout_constraintEnd_toStartOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintGuide_begin com.android.inputmethod.pinyin:layout_constraintGuide_begin}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintGuide_end com.android.inputmethod.pinyin:layout_constraintGuide_end}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintGuide_percent com.android.inputmethod.pinyin:layout_constraintGuide_percent}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintHeight_default com.android.inputmethod.pinyin:layout_constraintHeight_default}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintHeight_max com.android.inputmethod.pinyin:layout_constraintHeight_max}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintHeight_min com.android.inputmethod.pinyin:layout_constraintHeight_min}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintHeight_percent com.android.inputmethod.pinyin:layout_constraintHeight_percent}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintHorizontal_bias com.android.inputmethod.pinyin:layout_constraintHorizontal_bias}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintHorizontal_chainStyle com.android.inputmethod.pinyin:layout_constraintHorizontal_chainStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintHorizontal_weight com.android.inputmethod.pinyin:layout_constraintHorizontal_weight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintLeft_creator com.android.inputmethod.pinyin:layout_constraintLeft_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintLeft_toLeftOf com.android.inputmethod.pinyin:layout_constraintLeft_toLeftOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintLeft_toRightOf com.android.inputmethod.pinyin:layout_constraintLeft_toRightOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintRight_creator com.android.inputmethod.pinyin:layout_constraintRight_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintRight_toLeftOf com.android.inputmethod.pinyin:layout_constraintRight_toLeftOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintRight_toRightOf com.android.inputmethod.pinyin:layout_constraintRight_toRightOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintStart_toEndOf com.android.inputmethod.pinyin:layout_constraintStart_toEndOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintStart_toStartOf com.android.inputmethod.pinyin:layout_constraintStart_toStartOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintTop_creator com.android.inputmethod.pinyin:layout_constraintTop_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintTop_toBottomOf com.android.inputmethod.pinyin:layout_constraintTop_toBottomOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintTop_toTopOf com.android.inputmethod.pinyin:layout_constraintTop_toTopOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintVertical_bias com.android.inputmethod.pinyin:layout_constraintVertical_bias}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintVertical_chainStyle com.android.inputmethod.pinyin:layout_constraintVertical_chainStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintVertical_weight com.android.inputmethod.pinyin:layout_constraintVertical_weight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintWidth_default com.android.inputmethod.pinyin:layout_constraintWidth_default}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintWidth_max com.android.inputmethod.pinyin:layout_constraintWidth_max}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintWidth_min com.android.inputmethod.pinyin:layout_constraintWidth_min}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintWidth_percent com.android.inputmethod.pinyin:layout_constraintWidth_percent}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_editor_absoluteX com.android.inputmethod.pinyin:layout_editor_absoluteX}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_editor_absoluteY com.android.inputmethod.pinyin:layout_editor_absoluteY}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginBottom com.android.inputmethod.pinyin:layout_goneMarginBottom}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginEnd com.android.inputmethod.pinyin:layout_goneMarginEnd}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginLeft com.android.inputmethod.pinyin:layout_goneMarginLeft}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginRight com.android.inputmethod.pinyin:layout_goneMarginRight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginStart com.android.inputmethod.pinyin:layout_goneMarginStart}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginTop com.android.inputmethod.pinyin:layout_goneMarginTop}</code></td><td></td></tr>
+     * </table>
+     * @see #ConstraintSet_android_orientation
+     * @see #ConstraintSet_android_id
+     * @see #ConstraintSet_android_visibility
+     * @see #ConstraintSet_android_layout_width
+     * @see #ConstraintSet_android_layout_height
+     * @see #ConstraintSet_android_layout_marginLeft
+     * @see #ConstraintSet_android_layout_marginTop
+     * @see #ConstraintSet_android_layout_marginRight
+     * @see #ConstraintSet_android_layout_marginBottom
+     * @see #ConstraintSet_android_alpha
+     * @see #ConstraintSet_android_transformPivotX
+     * @see #ConstraintSet_android_transformPivotY
+     * @see #ConstraintSet_android_translationX
+     * @see #ConstraintSet_android_translationY
+     * @see #ConstraintSet_android_scaleX
+     * @see #ConstraintSet_android_scaleY
+     * @see #ConstraintSet_android_rotation
+     * @see #ConstraintSet_android_rotationX
+     * @see #ConstraintSet_android_rotationY
+     * @see #ConstraintSet_android_layout_marginStart
+     * @see #ConstraintSet_android_layout_marginEnd
+     * @see #ConstraintSet_android_translationZ
+     * @see #ConstraintSet_android_elevation
+     * @see #ConstraintSet_layout_constrainedHeight
+     * @see #ConstraintSet_layout_constrainedWidth
+     * @see #ConstraintSet_layout_constraintBaseline_creator
+     * @see #ConstraintSet_layout_constraintBaseline_toBaselineOf
+     * @see #ConstraintSet_layout_constraintBottom_creator
+     * @see #ConstraintSet_layout_constraintBottom_toBottomOf
+     * @see #ConstraintSet_layout_constraintBottom_toTopOf
+     * @see #ConstraintSet_layout_constraintCircle
+     * @see #ConstraintSet_layout_constraintCircleAngle
+     * @see #ConstraintSet_layout_constraintCircleRadius
+     * @see #ConstraintSet_layout_constraintDimensionRatio
+     * @see #ConstraintSet_layout_constraintEnd_toEndOf
+     * @see #ConstraintSet_layout_constraintEnd_toStartOf
+     * @see #ConstraintSet_layout_constraintGuide_begin
+     * @see #ConstraintSet_layout_constraintGuide_end
+     * @see #ConstraintSet_layout_constraintGuide_percent
+     * @see #ConstraintSet_layout_constraintHeight_default
+     * @see #ConstraintSet_layout_constraintHeight_max
+     * @see #ConstraintSet_layout_constraintHeight_min
+     * @see #ConstraintSet_layout_constraintHeight_percent
+     * @see #ConstraintSet_layout_constraintHorizontal_bias
+     * @see #ConstraintSet_layout_constraintHorizontal_chainStyle
+     * @see #ConstraintSet_layout_constraintHorizontal_weight
+     * @see #ConstraintSet_layout_constraintLeft_creator
+     * @see #ConstraintSet_layout_constraintLeft_toLeftOf
+     * @see #ConstraintSet_layout_constraintLeft_toRightOf
+     * @see #ConstraintSet_layout_constraintRight_creator
+     * @see #ConstraintSet_layout_constraintRight_toLeftOf
+     * @see #ConstraintSet_layout_constraintRight_toRightOf
+     * @see #ConstraintSet_layout_constraintStart_toEndOf
+     * @see #ConstraintSet_layout_constraintStart_toStartOf
+     * @see #ConstraintSet_layout_constraintTop_creator
+     * @see #ConstraintSet_layout_constraintTop_toBottomOf
+     * @see #ConstraintSet_layout_constraintTop_toTopOf
+     * @see #ConstraintSet_layout_constraintVertical_bias
+     * @see #ConstraintSet_layout_constraintVertical_chainStyle
+     * @see #ConstraintSet_layout_constraintVertical_weight
+     * @see #ConstraintSet_layout_constraintWidth_default
+     * @see #ConstraintSet_layout_constraintWidth_max
+     * @see #ConstraintSet_layout_constraintWidth_min
+     * @see #ConstraintSet_layout_constraintWidth_percent
+     * @see #ConstraintSet_layout_editor_absoluteX
+     * @see #ConstraintSet_layout_editor_absoluteY
+     * @see #ConstraintSet_layout_goneMarginBottom
+     * @see #ConstraintSet_layout_goneMarginEnd
+     * @see #ConstraintSet_layout_goneMarginLeft
+     * @see #ConstraintSet_layout_goneMarginRight
+     * @see #ConstraintSet_layout_goneMarginStart
+     * @see #ConstraintSet_layout_goneMarginTop
+     */
+    public static final int[] ConstraintSet={
+        0x010100c4, 0x010100d0, 0x010100dc, 0x010100f4, 
+        0x010100f5, 0x010100f7, 0x010100f8, 0x010100f9, 
+        0x010100fa, 0x0101031f, 0x01010320, 0x01010321, 
+        0x01010322, 0x01010323, 0x01010324, 0x01010325, 
+        0x01010326, 0x01010327, 0x01010328, 0x010103b5, 
+        0x010103b6, 0x010103fa, 0x01010440, 0x7f010007, 
+        0x7f010008, 0x7f010009, 0x7f01000a, 0x7f01000b, 
+        0x7f01000c, 0x7f01000d, 0x7f01000e, 0x7f01000f, 
+        0x7f010010, 0x7f010011, 0x7f010012, 0x7f010013, 
+        0x7f010014, 0x7f010015, 0x7f010016, 0x7f010017, 
+        0x7f010018, 0x7f010019, 0x7f01001a, 0x7f01001b, 
+        0x7f01001c, 0x7f01001d, 0x7f01001e, 0x7f01001f, 
+        0x7f010020, 0x7f010021, 0x7f010022, 0x7f010023, 
+        0x7f010024, 0x7f010025, 0x7f010026, 0x7f010027, 
+        0x7f010028, 0x7f010029, 0x7f01002a, 0x7f01002b, 
+        0x7f01002c, 0x7f01002d, 0x7f01002e, 0x7f01002f, 
+        0x7f010030, 0x7f010031, 0x7f010032, 0x7f010033, 
+        0x7f010034, 0x7f010035, 0x7f010036, 0x7f010037
+      };
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#alpha}
+     * attribute's value can be found in the {@link #ConstraintSet} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name android:alpha
+     */
+    public static final int ConstraintSet_android_alpha=9;
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#elevation}
+     * attribute's value can be found in the {@link #ConstraintSet} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name android:elevation
+     */
+    public static final int ConstraintSet_android_elevation=22;
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#id}
+     * attribute's value can be found in the {@link #ConstraintSet} array.
+     *
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     *
+     * @attr name android:id
+     */
+    public static final int ConstraintSet_android_id=1;
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#layout_height}
+     * attribute's value can be found in the {@link #ConstraintSet} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>wrap_content</td><td>fffffffe</td><td></td></tr>
+     * <tr><td>fill_parent</td><td>ffffffff</td><td></td></tr>
+     * <tr><td>match_parent</td><td>ffffffff</td><td></td></tr>
+     * </table>
+     *
+     * @attr name android:layout_height
+     */
+    public static final int ConstraintSet_android_layout_height=4;
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#layout_marginBottom}
+     * attribute's value can be found in the {@link #ConstraintSet} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name android:layout_marginBottom
+     */
+    public static final int ConstraintSet_android_layout_marginBottom=8;
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#layout_marginEnd}
+     * attribute's value can be found in the {@link #ConstraintSet} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name android:layout_marginEnd
+     */
+    public static final int ConstraintSet_android_layout_marginEnd=20;
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#layout_marginLeft}
+     * attribute's value can be found in the {@link #ConstraintSet} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name android:layout_marginLeft
+     */
+    public static final int ConstraintSet_android_layout_marginLeft=5;
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#layout_marginRight}
+     * attribute's value can be found in the {@link #ConstraintSet} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name android:layout_marginRight
+     */
+    public static final int ConstraintSet_android_layout_marginRight=7;
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#layout_marginStart}
+     * attribute's value can be found in the {@link #ConstraintSet} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name android:layout_marginStart
+     */
+    public static final int ConstraintSet_android_layout_marginStart=19;
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#layout_marginTop}
+     * attribute's value can be found in the {@link #ConstraintSet} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name android:layout_marginTop
+     */
+    public static final int ConstraintSet_android_layout_marginTop=6;
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#layout_width}
+     * attribute's value can be found in the {@link #ConstraintSet} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>wrap_content</td><td>fffffffe</td><td></td></tr>
+     * <tr><td>fill_parent</td><td>ffffffff</td><td></td></tr>
+     * <tr><td>match_parent</td><td>ffffffff</td><td></td></tr>
+     * </table>
+     *
+     * @attr name android:layout_width
+     */
+    public static final int ConstraintSet_android_layout_width=3;
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#orientation}
+     * attribute's value can be found in the {@link #ConstraintSet} array.
+     *
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>horizontal</td><td>0</td><td></td></tr>
+     * <tr><td>vertical</td><td>1</td><td></td></tr>
+     * </table>
+     *
+     * @attr name android:orientation
+     */
+    public static final int ConstraintSet_android_orientation=0;
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#rotation}
+     * attribute's value can be found in the {@link #ConstraintSet} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name android:rotation
+     */
+    public static final int ConstraintSet_android_rotation=16;
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#rotationX}
+     * attribute's value can be found in the {@link #ConstraintSet} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name android:rotationX
+     */
+    public static final int ConstraintSet_android_rotationX=17;
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#rotationY}
+     * attribute's value can be found in the {@link #ConstraintSet} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name android:rotationY
+     */
+    public static final int ConstraintSet_android_rotationY=18;
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#scaleX}
+     * attribute's value can be found in the {@link #ConstraintSet} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name android:scaleX
+     */
+    public static final int ConstraintSet_android_scaleX=14;
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#scaleY}
+     * attribute's value can be found in the {@link #ConstraintSet} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name android:scaleY
+     */
+    public static final int ConstraintSet_android_scaleY=15;
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#transformPivotX}
+     * attribute's value can be found in the {@link #ConstraintSet} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name android:transformPivotX
+     */
+    public static final int ConstraintSet_android_transformPivotX=10;
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#transformPivotY}
+     * attribute's value can be found in the {@link #ConstraintSet} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name android:transformPivotY
+     */
+    public static final int ConstraintSet_android_transformPivotY=11;
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#translationX}
+     * attribute's value can be found in the {@link #ConstraintSet} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name android:translationX
+     */
+    public static final int ConstraintSet_android_translationX=12;
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#translationY}
+     * attribute's value can be found in the {@link #ConstraintSet} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name android:translationY
+     */
+    public static final int ConstraintSet_android_translationY=13;
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#translationZ}
+     * attribute's value can be found in the {@link #ConstraintSet} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name android:translationZ
+     */
+    public static final int ConstraintSet_android_translationZ=21;
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#visibility}
+     * attribute's value can be found in the {@link #ConstraintSet} array.
+     *
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>gone</td><td>2</td><td></td></tr>
+     * <tr><td>invisible</td><td>1</td><td></td></tr>
+     * <tr><td>visible</td><td>0</td><td></td></tr>
+     * </table>
+     *
+     * @attr name android:visibility
+     */
+    public static final int ConstraintSet_android_visibility=2;
+    /**
+     * <p>This symbol is the offset where the {@link com.android.inputmethod.pinyin.R.attr#layout_constrainedHeight}
+     * attribute's value can be found in the {@link #ConstraintSet} array.
+     *
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     *
+     * @attr name com.android.inputmethod.pinyin:layout_constrainedHeight
+     */
+    public static final int ConstraintSet_layout_constrainedHeight=23;
+    /**
+     * <p>This symbol is the offset where the {@link com.android.inputmethod.pinyin.R.attr#layout_constrainedWidth}
+     * attribute's value can be found in the {@link #ConstraintSet} array.
+     *
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     *
+     * @attr name com.android.inputmethod.pinyin:layout_constrainedWidth
+     */
+    public static final int ConstraintSet_layout_constrainedWidth=24;
+    /**
+     * <p>This symbol is the offset where the {@link com.android.inputmethod.pinyin.R.attr#layout_constraintBaseline_creator}
+     * attribute's value can be found in the {@link #ConstraintSet} array.
+     *
+     * <p>May be an integer value, such as "<code>100</code>".
+     *
+     * @attr name com.android.inputmethod.pinyin:layout_constraintBaseline_creator
+     */
+    public static final int ConstraintSet_layout_constraintBaseline_creator=25;
+    /**
+     * <p>This symbol is the offset where the {@link com.android.inputmethod.pinyin.R.attr#layout_constraintBaseline_toBaselineOf}
+     * attribute's value can be found in the {@link #ConstraintSet} array.
+     *
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>parent</td><td>0</td><td></td></tr>
+     * </table>
+     *
+     * @attr name com.android.inputmethod.pinyin:layout_constraintBaseline_toBaselineOf
+     */
+    public static final int ConstraintSet_layout_constraintBaseline_toBaselineOf=26;
+    /**
+     * <p>This symbol is the offset where the {@link com.android.inputmethod.pinyin.R.attr#layout_constraintBottom_creator}
+     * attribute's value can be found in the {@link #ConstraintSet} array.
+     *
+     * <p>May be an integer value, such as "<code>100</code>".
+     *
+     * @attr name com.android.inputmethod.pinyin:layout_constraintBottom_creator
+     */
+    public static final int ConstraintSet_layout_constraintBottom_creator=27;
+    /**
+     * <p>This symbol is the offset where the {@link com.android.inputmethod.pinyin.R.attr#layout_constraintBottom_toBottomOf}
+     * attribute's value can be found in the {@link #ConstraintSet} array.
+     *
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>parent</td><td>0</td><td></td></tr>
+     * </table>
+     *
+     * @attr name com.android.inputmethod.pinyin:layout_constraintBottom_toBottomOf
+     */
+    public static final int ConstraintSet_layout_constraintBottom_toBottomOf=28;
+    /**
+     * <p>This symbol is the offset where the {@link com.android.inputmethod.pinyin.R.attr#layout_constraintBottom_toTopOf}
+     * attribute's value can be found in the {@link #ConstraintSet} array.
+     *
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>parent</td><td>0</td><td></td></tr>
+     * </table>
+     *
+     * @attr name com.android.inputmethod.pinyin:layout_constraintBottom_toTopOf
+     */
+    public static final int ConstraintSet_layout_constraintBottom_toTopOf=29;
+    /**
+     * <p>This symbol is the offset where the {@link com.android.inputmethod.pinyin.R.attr#layout_constraintCircle}
+     * attribute's value can be found in the {@link #ConstraintSet} array.
+     *
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     *
+     * @attr name com.android.inputmethod.pinyin:layout_constraintCircle
+     */
+    public static final int ConstraintSet_layout_constraintCircle=30;
+    /**
+     * <p>This symbol is the offset where the {@link com.android.inputmethod.pinyin.R.attr#layout_constraintCircleAngle}
+     * attribute's value can be found in the {@link #ConstraintSet} array.
+     *
+     * <p>May be an integer value, such as "<code>100</code>".
+     *
+     * @attr name com.android.inputmethod.pinyin:layout_constraintCircleAngle
+     */
+    public static final int ConstraintSet_layout_constraintCircleAngle=31;
+    /**
+     * <p>This symbol is the offset where the {@link com.android.inputmethod.pinyin.R.attr#layout_constraintCircleRadius}
+     * attribute's value can be found in the {@link #ConstraintSet} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name com.android.inputmethod.pinyin:layout_constraintCircleRadius
+     */
+    public static final int ConstraintSet_layout_constraintCircleRadius=32;
+    /**
+     * <p>This symbol is the offset where the {@link com.android.inputmethod.pinyin.R.attr#layout_constraintDimensionRatio}
+     * attribute's value can be found in the {@link #ConstraintSet} array.
+     *
+     * <p>May be a string value, using '\\;' to escape characters such as
+     * '\\n' or '\\uxxxx' for a unicode character;
+     *
+     * @attr name com.android.inputmethod.pinyin:layout_constraintDimensionRatio
+     */
+    public static final int ConstraintSet_layout_constraintDimensionRatio=33;
+    /**
+     * <p>This symbol is the offset where the {@link com.android.inputmethod.pinyin.R.attr#layout_constraintEnd_toEndOf}
+     * attribute's value can be found in the {@link #ConstraintSet} array.
+     *
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>parent</td><td>0</td><td></td></tr>
+     * </table>
+     *
+     * @attr name com.android.inputmethod.pinyin:layout_constraintEnd_toEndOf
+     */
+    public static final int ConstraintSet_layout_constraintEnd_toEndOf=34;
+    /**
+     * <p>This symbol is the offset where the {@link com.android.inputmethod.pinyin.R.attr#layout_constraintEnd_toStartOf}
+     * attribute's value can be found in the {@link #ConstraintSet} array.
+     *
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>parent</td><td>0</td><td></td></tr>
+     * </table>
+     *
+     * @attr name com.android.inputmethod.pinyin:layout_constraintEnd_toStartOf
+     */
+    public static final int ConstraintSet_layout_constraintEnd_toStartOf=35;
+    /**
+     * <p>This symbol is the offset where the {@link com.android.inputmethod.pinyin.R.attr#layout_constraintGuide_begin}
+     * attribute's value can be found in the {@link #ConstraintSet} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name com.android.inputmethod.pinyin:layout_constraintGuide_begin
+     */
+    public static final int ConstraintSet_layout_constraintGuide_begin=36;
+    /**
+     * <p>This symbol is the offset where the {@link com.android.inputmethod.pinyin.R.attr#layout_constraintGuide_end}
+     * attribute's value can be found in the {@link #ConstraintSet} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name com.android.inputmethod.pinyin:layout_constraintGuide_end
+     */
+    public static final int ConstraintSet_layout_constraintGuide_end=37;
+    /**
+     * <p>This symbol is the offset where the {@link com.android.inputmethod.pinyin.R.attr#layout_constraintGuide_percent}
+     * attribute's value can be found in the {@link #ConstraintSet} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name com.android.inputmethod.pinyin:layout_constraintGuide_percent
+     */
+    public static final int ConstraintSet_layout_constraintGuide_percent=38;
+    /**
+     * <p>This symbol is the offset where the {@link com.android.inputmethod.pinyin.R.attr#layout_constraintHeight_default}
+     * attribute's value can be found in the {@link #ConstraintSet} array.
+     *
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>percent</td><td>2</td><td></td></tr>
+     * <tr><td>spread</td><td>0</td><td></td></tr>
+     * <tr><td>wrap</td><td>1</td><td></td></tr>
+     * </table>
+     *
+     * @attr name com.android.inputmethod.pinyin:layout_constraintHeight_default
+     */
+    public static final int ConstraintSet_layout_constraintHeight_default=39;
+    /**
+     * <p>This symbol is the offset where the {@link com.android.inputmethod.pinyin.R.attr#layout_constraintHeight_max}
+     * attribute's value can be found in the {@link #ConstraintSet} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>wrap</td><td>fffffffe</td><td></td></tr>
+     * </table>
+     *
+     * @attr name com.android.inputmethod.pinyin:layout_constraintHeight_max
+     */
+    public static final int ConstraintSet_layout_constraintHeight_max=40;
+    /**
+     * <p>This symbol is the offset where the {@link com.android.inputmethod.pinyin.R.attr#layout_constraintHeight_min}
+     * attribute's value can be found in the {@link #ConstraintSet} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>wrap</td><td>fffffffe</td><td></td></tr>
+     * </table>
+     *
+     * @attr name com.android.inputmethod.pinyin:layout_constraintHeight_min
+     */
+    public static final int ConstraintSet_layout_constraintHeight_min=41;
+    /**
+     * <p>This symbol is the offset where the {@link com.android.inputmethod.pinyin.R.attr#layout_constraintHeight_percent}
+     * attribute's value can be found in the {@link #ConstraintSet} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name com.android.inputmethod.pinyin:layout_constraintHeight_percent
+     */
+    public static final int ConstraintSet_layout_constraintHeight_percent=42;
+    /**
+     * <p>This symbol is the offset where the {@link com.android.inputmethod.pinyin.R.attr#layout_constraintHorizontal_bias}
+     * attribute's value can be found in the {@link #ConstraintSet} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name com.android.inputmethod.pinyin:layout_constraintHorizontal_bias
+     */
+    public static final int ConstraintSet_layout_constraintHorizontal_bias=43;
+    /**
+     * <p>This symbol is the offset where the {@link com.android.inputmethod.pinyin.R.attr#layout_constraintHorizontal_chainStyle}
+     * attribute's value can be found in the {@link #ConstraintSet} array.
+     *
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>packed</td><td>2</td><td></td></tr>
+     * <tr><td>spread</td><td>0</td><td></td></tr>
+     * <tr><td>spread_inside</td><td>1</td><td></td></tr>
+     * </table>
+     *
+     * @attr name com.android.inputmethod.pinyin:layout_constraintHorizontal_chainStyle
+     */
+    public static final int ConstraintSet_layout_constraintHorizontal_chainStyle=44;
+    /**
+     * <p>This symbol is the offset where the {@link com.android.inputmethod.pinyin.R.attr#layout_constraintHorizontal_weight}
+     * attribute's value can be found in the {@link #ConstraintSet} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name com.android.inputmethod.pinyin:layout_constraintHorizontal_weight
+     */
+    public static final int ConstraintSet_layout_constraintHorizontal_weight=45;
+    /**
+     * <p>This symbol is the offset where the {@link com.android.inputmethod.pinyin.R.attr#layout_constraintLeft_creator}
+     * attribute's value can be found in the {@link #ConstraintSet} array.
+     *
+     * <p>May be an integer value, such as "<code>100</code>".
+     *
+     * @attr name com.android.inputmethod.pinyin:layout_constraintLeft_creator
+     */
+    public static final int ConstraintSet_layout_constraintLeft_creator=46;
+    /**
+     * <p>This symbol is the offset where the {@link com.android.inputmethod.pinyin.R.attr#layout_constraintLeft_toLeftOf}
+     * attribute's value can be found in the {@link #ConstraintSet} array.
+     *
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>parent</td><td>0</td><td></td></tr>
+     * </table>
+     *
+     * @attr name com.android.inputmethod.pinyin:layout_constraintLeft_toLeftOf
+     */
+    public static final int ConstraintSet_layout_constraintLeft_toLeftOf=47;
+    /**
+     * <p>This symbol is the offset where the {@link com.android.inputmethod.pinyin.R.attr#layout_constraintLeft_toRightOf}
+     * attribute's value can be found in the {@link #ConstraintSet} array.
+     *
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>parent</td><td>0</td><td></td></tr>
+     * </table>
+     *
+     * @attr name com.android.inputmethod.pinyin:layout_constraintLeft_toRightOf
+     */
+    public static final int ConstraintSet_layout_constraintLeft_toRightOf=48;
+    /**
+     * <p>This symbol is the offset where the {@link com.android.inputmethod.pinyin.R.attr#layout_constraintRight_creator}
+     * attribute's value can be found in the {@link #ConstraintSet} array.
+     *
+     * <p>May be an integer value, such as "<code>100</code>".
+     *
+     * @attr name com.android.inputmethod.pinyin:layout_constraintRight_creator
+     */
+    public static final int ConstraintSet_layout_constraintRight_creator=49;
+    /**
+     * <p>This symbol is the offset where the {@link com.android.inputmethod.pinyin.R.attr#layout_constraintRight_toLeftOf}
+     * attribute's value can be found in the {@link #ConstraintSet} array.
+     *
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>parent</td><td>0</td><td></td></tr>
+     * </table>
+     *
+     * @attr name com.android.inputmethod.pinyin:layout_constraintRight_toLeftOf
+     */
+    public static final int ConstraintSet_layout_constraintRight_toLeftOf=50;
+    /**
+     * <p>This symbol is the offset where the {@link com.android.inputmethod.pinyin.R.attr#layout_constraintRight_toRightOf}
+     * attribute's value can be found in the {@link #ConstraintSet} array.
+     *
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>parent</td><td>0</td><td></td></tr>
+     * </table>
+     *
+     * @attr name com.android.inputmethod.pinyin:layout_constraintRight_toRightOf
+     */
+    public static final int ConstraintSet_layout_constraintRight_toRightOf=51;
+    /**
+     * <p>This symbol is the offset where the {@link com.android.inputmethod.pinyin.R.attr#layout_constraintStart_toEndOf}
+     * attribute's value can be found in the {@link #ConstraintSet} array.
+     *
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>parent</td><td>0</td><td></td></tr>
+     * </table>
+     *
+     * @attr name com.android.inputmethod.pinyin:layout_constraintStart_toEndOf
+     */
+    public static final int ConstraintSet_layout_constraintStart_toEndOf=52;
+    /**
+     * <p>This symbol is the offset where the {@link com.android.inputmethod.pinyin.R.attr#layout_constraintStart_toStartOf}
+     * attribute's value can be found in the {@link #ConstraintSet} array.
+     *
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>parent</td><td>0</td><td></td></tr>
+     * </table>
+     *
+     * @attr name com.android.inputmethod.pinyin:layout_constraintStart_toStartOf
+     */
+    public static final int ConstraintSet_layout_constraintStart_toStartOf=53;
+    /**
+     * <p>This symbol is the offset where the {@link com.android.inputmethod.pinyin.R.attr#layout_constraintTop_creator}
+     * attribute's value can be found in the {@link #ConstraintSet} array.
+     *
+     * <p>May be an integer value, such as "<code>100</code>".
+     *
+     * @attr name com.android.inputmethod.pinyin:layout_constraintTop_creator
+     */
+    public static final int ConstraintSet_layout_constraintTop_creator=54;
+    /**
+     * <p>This symbol is the offset where the {@link com.android.inputmethod.pinyin.R.attr#layout_constraintTop_toBottomOf}
+     * attribute's value can be found in the {@link #ConstraintSet} array.
+     *
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>parent</td><td>0</td><td></td></tr>
+     * </table>
+     *
+     * @attr name com.android.inputmethod.pinyin:layout_constraintTop_toBottomOf
+     */
+    public static final int ConstraintSet_layout_constraintTop_toBottomOf=55;
+    /**
+     * <p>This symbol is the offset where the {@link com.android.inputmethod.pinyin.R.attr#layout_constraintTop_toTopOf}
+     * attribute's value can be found in the {@link #ConstraintSet} array.
+     *
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>parent</td><td>0</td><td></td></tr>
+     * </table>
+     *
+     * @attr name com.android.inputmethod.pinyin:layout_constraintTop_toTopOf
+     */
+    public static final int ConstraintSet_layout_constraintTop_toTopOf=56;
+    /**
+     * <p>This symbol is the offset where the {@link com.android.inputmethod.pinyin.R.attr#layout_constraintVertical_bias}
+     * attribute's value can be found in the {@link #ConstraintSet} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name com.android.inputmethod.pinyin:layout_constraintVertical_bias
+     */
+    public static final int ConstraintSet_layout_constraintVertical_bias=57;
+    /**
+     * <p>This symbol is the offset where the {@link com.android.inputmethod.pinyin.R.attr#layout_constraintVertical_chainStyle}
+     * attribute's value can be found in the {@link #ConstraintSet} array.
+     *
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>packed</td><td>2</td><td></td></tr>
+     * <tr><td>spread</td><td>0</td><td></td></tr>
+     * <tr><td>spread_inside</td><td>1</td><td></td></tr>
+     * </table>
+     *
+     * @attr name com.android.inputmethod.pinyin:layout_constraintVertical_chainStyle
+     */
+    public static final int ConstraintSet_layout_constraintVertical_chainStyle=58;
+    /**
+     * <p>This symbol is the offset where the {@link com.android.inputmethod.pinyin.R.attr#layout_constraintVertical_weight}
+     * attribute's value can be found in the {@link #ConstraintSet} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name com.android.inputmethod.pinyin:layout_constraintVertical_weight
+     */
+    public static final int ConstraintSet_layout_constraintVertical_weight=59;
+    /**
+     * <p>This symbol is the offset where the {@link com.android.inputmethod.pinyin.R.attr#layout_constraintWidth_default}
+     * attribute's value can be found in the {@link #ConstraintSet} array.
+     *
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>percent</td><td>2</td><td></td></tr>
+     * <tr><td>spread</td><td>0</td><td></td></tr>
+     * <tr><td>wrap</td><td>1</td><td></td></tr>
+     * </table>
+     *
+     * @attr name com.android.inputmethod.pinyin:layout_constraintWidth_default
+     */
+    public static final int ConstraintSet_layout_constraintWidth_default=60;
+    /**
+     * <p>This symbol is the offset where the {@link com.android.inputmethod.pinyin.R.attr#layout_constraintWidth_max}
+     * attribute's value can be found in the {@link #ConstraintSet} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>wrap</td><td>fffffffe</td><td></td></tr>
+     * </table>
+     *
+     * @attr name com.android.inputmethod.pinyin:layout_constraintWidth_max
+     */
+    public static final int ConstraintSet_layout_constraintWidth_max=61;
+    /**
+     * <p>This symbol is the offset where the {@link com.android.inputmethod.pinyin.R.attr#layout_constraintWidth_min}
+     * attribute's value can be found in the {@link #ConstraintSet} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>wrap</td><td>fffffffe</td><td></td></tr>
+     * </table>
+     *
+     * @attr name com.android.inputmethod.pinyin:layout_constraintWidth_min
+     */
+    public static final int ConstraintSet_layout_constraintWidth_min=62;
+    /**
+     * <p>This symbol is the offset where the {@link com.android.inputmethod.pinyin.R.attr#layout_constraintWidth_percent}
+     * attribute's value can be found in the {@link #ConstraintSet} array.
+     *
+     * <p>May be a floating point value, such as "<code>1.2</code>".
+     *
+     * @attr name com.android.inputmethod.pinyin:layout_constraintWidth_percent
+     */
+    public static final int ConstraintSet_layout_constraintWidth_percent=63;
+    /**
+     * <p>This symbol is the offset where the {@link com.android.inputmethod.pinyin.R.attr#layout_editor_absoluteX}
+     * attribute's value can be found in the {@link #ConstraintSet} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name com.android.inputmethod.pinyin:layout_editor_absoluteX
+     */
+    public static final int ConstraintSet_layout_editor_absoluteX=64;
+    /**
+     * <p>This symbol is the offset where the {@link com.android.inputmethod.pinyin.R.attr#layout_editor_absoluteY}
+     * attribute's value can be found in the {@link #ConstraintSet} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name com.android.inputmethod.pinyin:layout_editor_absoluteY
+     */
+    public static final int ConstraintSet_layout_editor_absoluteY=65;
+    /**
+     * <p>This symbol is the offset where the {@link com.android.inputmethod.pinyin.R.attr#layout_goneMarginBottom}
+     * attribute's value can be found in the {@link #ConstraintSet} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name com.android.inputmethod.pinyin:layout_goneMarginBottom
+     */
+    public static final int ConstraintSet_layout_goneMarginBottom=66;
+    /**
+     * <p>This symbol is the offset where the {@link com.android.inputmethod.pinyin.R.attr#layout_goneMarginEnd}
+     * attribute's value can be found in the {@link #ConstraintSet} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name com.android.inputmethod.pinyin:layout_goneMarginEnd
+     */
+    public static final int ConstraintSet_layout_goneMarginEnd=67;
+    /**
+     * <p>This symbol is the offset where the {@link com.android.inputmethod.pinyin.R.attr#layout_goneMarginLeft}
+     * attribute's value can be found in the {@link #ConstraintSet} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name com.android.inputmethod.pinyin:layout_goneMarginLeft
+     */
+    public static final int ConstraintSet_layout_goneMarginLeft=68;
+    /**
+     * <p>This symbol is the offset where the {@link com.android.inputmethod.pinyin.R.attr#layout_goneMarginRight}
+     * attribute's value can be found in the {@link #ConstraintSet} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name com.android.inputmethod.pinyin:layout_goneMarginRight
+     */
+    public static final int ConstraintSet_layout_goneMarginRight=69;
+    /**
+     * <p>This symbol is the offset where the {@link com.android.inputmethod.pinyin.R.attr#layout_goneMarginStart}
+     * attribute's value can be found in the {@link #ConstraintSet} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name com.android.inputmethod.pinyin:layout_goneMarginStart
+     */
+    public static final int ConstraintSet_layout_goneMarginStart=70;
+    /**
+     * <p>This symbol is the offset where the {@link com.android.inputmethod.pinyin.R.attr#layout_goneMarginTop}
+     * attribute's value can be found in the {@link #ConstraintSet} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name com.android.inputmethod.pinyin:layout_goneMarginTop
+     */
+    public static final int ConstraintSet_layout_goneMarginTop=71;
+    /**
+     * Attributes that can be used with a LinearConstraintLayout.
+     * <p>Includes the following attributes:</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Attribute</th><th>Description</th></tr>
+     * <tr><td><code>{@link #LinearConstraintLayout_android_orientation android:orientation}</code></td><td></td></tr>
+     * </table>
+     * @see #LinearConstraintLayout_android_orientation
+     */
+    public static final int[] LinearConstraintLayout={
+        0x010100c4
+      };
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#orientation}
+     * attribute's value can be found in the {@link #LinearConstraintLayout} array.
+     *
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>horizontal</td><td>0</td><td></td></tr>
+     * <tr><td>vertical</td><td>1</td><td></td></tr>
+     * </table>
+     *
+     * @attr name android:orientation
+     */
+    public static final int LinearConstraintLayout_android_orientation=0;
   }
   public static final class xml {
-    public static final int method=0x7f090000;
-    public static final int settings=0x7f090001;
-    public static final int skb_phone=0x7f090002;
-    public static final int skb_qwerty=0x7f090003;
-    public static final int skb_smiley=0x7f090004;
-    public static final int skb_sym1=0x7f090005;
-    public static final int skb_sym2=0x7f090006;
-    public static final int skb_template1=0x7f090007;
+    public static final int method=0x7f0b0000;
+    public static final int settings=0x7f0b0001;
+    public static final int skb_phone=0x7f0b0002;
+    public static final int skb_phone9=0x7f0b0003;
+    public static final int skb_qwerty=0x7f0b0004;
+    public static final int skb_smiley=0x7f0b0005;
+    public static final int skb_sym1=0x7f0b0006;
+    public static final int skb_sym2=0x7f0b0007;
+    public static final int skb_template1=0x7f0b0008;
   }
 }

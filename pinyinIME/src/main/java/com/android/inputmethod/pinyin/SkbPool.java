@@ -43,7 +43,7 @@ public class SkbPool {
     public void resetCachedSkb() {
         mSoftKeyboards.clear();
     }
-
+    //获取Skb样板，注意该方法只被调用了一次，而且还是在XmlKeyboardLoader中调用的。SkbTemplate有什么用呢？
     public SkbTemplate getSkbTemplate(int skbTemplateId, Context context) {
         for (int i = 0; i < mSkbTemplates.size(); i++) {
             SkbTemplate t = mSkbTemplates.elementAt(i);

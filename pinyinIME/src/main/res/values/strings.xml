@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!-- Copyright (C) 2009 The Android Open Source Project
+<?xml version="1.0" encoding="UTF-8"?><!-- Copyright (C) 2009 The Android Open Source Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -45,7 +44,7 @@
     <string name="setting_switch_key">setting_switch_key</string>
     <string name="setting_advanced_key">setting_advanced_key</string>
 
-	<string name="setting">谷歌拼音输入法设置</string>
+    <string name="setting">谷歌拼音输入法设置</string>
     <string name="setting_sound_key_title">按键声音</string>
     <string name="setting_vibrate_title">按键震动</string>
     <string name="setting_prediction_title">联想输入</string>

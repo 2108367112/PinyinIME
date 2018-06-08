@@ -22,15 +22,15 @@ import android.graphics.drawable.Drawable;
  * Class for soft keys which defined in the keyboard xml file. A soft key can be
  * a basic key or a toggling key.
  *
- * 类用于描述在键盘XML文件中定义的单个按键。软键可以基本键或拨号键。
+ * 类用于描述在键盘XML文件中定义的单个按键。软键可以基本键或拨号键。toggling 译为：(切换)
  *
  * @see com.android.inputmethod.pinyin.SoftKeyToggle
  */
 
 //SoftKey 是单个按键的表示类。注意，它只是描述了按键的参数，并没有继承自View,无法设置点击事件。
 public class SoftKey {
-    protected static final int KEYMASK_REPEAT = 0x10000000;
-    protected static final int KEYMASK_BALLOON = 0x20000000;
+    protected static final int KEYMASK_REPEAT = 0x10000000;//按键重复标志
+    protected static final int KEYMASK_BALLOON = 0x20000000;//按键气球标志
 
     /**
      * For a finger touch device, after user presses a key, there will be some
@@ -38,7 +38,7 @@ public class SoftKey {
      * the moving distance in x is within this threshold, the moving events will
      * be ignored.
      */
-    public static final int MAX_MOVE_TOLERANCE_X = 0;
+    public static final int MAX_MOVE_TOLERANCE_X = 0;//忽略按键事件
 
     /**
      * For a finger touch device, after user presses a key, there will be some
@@ -52,22 +52,24 @@ public class SoftKey {
      * Used to indicate the type and attributes of this key. the lowest 8 bits
      * should be reserved for SoftkeyToggle.
      */
+    //用于指示此键的类型和属性。最低8位应该为软按键保留。
     protected int mKeyMask;
 
-    protected SoftKeyType mKeyType;
+    protected SoftKeyType mKeyType;//按键类型 ,用来区别什么呢？
 
     protected Drawable mKeyIcon;
 
     protected Drawable mKeyIconPopup;
 
-    protected String mKeyLabel;
+    protected String mKeyLabel;//按键表示
 
-    protected int mKeyCode;
+    protected int mKeyCode;//按键编码
 
     /**
      * If this value is not 0, this key can be used to popup a sub soft keyboard
      * when user presses it for some time.
      */
+    //当此值不是0时，用户按下它一段时间，则此键可用于弹出子软键盘。
     public int mPopupSkbId;
 
     public float mLeftF;
@@ -78,7 +80,7 @@ public class SoftKey {
     public int mRight;
     public int mTop;
     public int mBottom;
-
+    //设置按键类型，按键的图标，按键弹出图标
     public void setKeyType(SoftKeyType keyType, Drawable keyIcon,
             Drawable keyIconPopup) {
         mKeyType = keyType;
@@ -87,6 +89,7 @@ public class SoftKey {
     }
 
     // The caller guarantees that all parameters are in [0, 1]
+    //调用方保证所有参数都在[0, 1 ]中。
     public void setKeyDimensions(float left, float top, float right,
             float bottom) {
         mLeftF = left;
@@ -94,7 +97,7 @@ public class SoftKey {
         mRightF = right;
         mBottomF = bottom;
     }
-
+    //设置按键属性
     public void setKeyAttribute(int keyCode, String label, boolean repeat,
             boolean balloon) {
         mKeyCode = keyCode;

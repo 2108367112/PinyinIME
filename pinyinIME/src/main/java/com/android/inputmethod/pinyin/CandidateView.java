@@ -38,6 +38,7 @@ import android.view.View;
  * View to show candidate list. There two candidate view instances which are
  * used to show animation when user navigates between pages.
  */
+//控件用来显示候选列词列表，内部有两个控件用来展示动画，用于用户导航页。
 public class CandidateView extends View {
     /**
      * The minimum width to show a item.
@@ -685,6 +686,7 @@ public class CandidateView extends View {
         return true;
     }
 
+    //显示气泡
     private void showBalloon(int candPos, boolean delayedShow) {
         mBalloonHint.removeTimer();
 

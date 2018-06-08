@@ -46,6 +46,7 @@ class KeyRecord {
  * Soft keyboard template used by soft keyboards to share common resources. In
  * this way, memory cost is reduced.
  */
+//软件盘样板，用来共享一些公用资源，减少内存消耗。
 public class SkbTemplate {
     private int mSkbTemplateId;
     private Drawable mSkbBg;
@@ -112,7 +113,7 @@ public class SkbTemplate {
 
     public boolean addKeyType(SoftKeyType keyType) {
         // The newly added item should have the right id.
-        if (mKeyTypeList.size() != keyType.mKeyTypeId) return false;
+        if (mKeyTypeList.size() != keyType.mKeyTypeId) return false;//id 比长度少1。所以这里才会相等。
         mKeyTypeList.add(keyType);
         return true;
     }
@@ -211,7 +212,7 @@ public class SkbTemplate {
 
 class SoftKeyType {
     public static final int KEYTYPE_ID_NORMAL_KEY = 0;
-
+    //6个字段
     public int mKeyTypeId;
     public Drawable mKeyBg;
     public Drawable mKeyHlBg;

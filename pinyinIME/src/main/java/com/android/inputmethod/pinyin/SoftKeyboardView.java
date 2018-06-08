@@ -28,6 +28,9 @@ import android.graphics.Paint.FontMetricsInt;
 import android.graphics.drawable.Drawable;
 import android.os.Vibrator;
 import android.util.AttributeSet;
+import android.util.Log;
+import android.view.KeyEvent;
+import android.view.MotionEvent;
 import android.view.View;
 
 /**
@@ -36,18 +39,21 @@ import android.view.View;
  * A soft keyboard view should not handle touch event itself, because we do bias
  * correction, need a global strategy to map an event into a proper view to
  * achieve better user experience.
- *
+ * <p>
  * 软键盘视图本身不应该处理触摸事件，因为我们进行偏置校正，需要一个全局策略来将事件映射到适当的视图，以获得更好的用户体验。
  */
 
 //一个View的扩展，描绘了一个键盘和用户输入事件的响应。
 
 public class SoftKeyboardView extends View {
+
+    private static final String TAG = "SoftKeyboardView";
+
     /**
      * The definition of the soft keyboard for the current this soft keyboard
      * view.
      */
-    private SoftKeyboard mSoftKeyboard;
+    private SoftKeyboard mSoftKeyboard;//SoftKeyboardView 持有当前 SoftKeyboard的引用
 
     /**
      * The popup balloon hint for key press/release.
@@ -60,13 +66,19 @@ public class SoftKeyboardView extends View {
      */
     private BalloonHint mBalloonOnKey;
 
-    /** Used to play key sounds. */
+    /**
+     * Used to play key sounds.
+     */
     private SoundManager mSoundManager;
 
-    /** The last key pressed. */
-    private SoftKey mSoftKeyDown;
+    /**
+     * The last key pressed.
+     */
+    private SoftKey mSoftKeyDown;//最后被按下的按键
 
-    /** Used to indicate whether the user is holding on a key. */
+    /**
+     * Used to indicate whether the user is holding on a key.
+     */
     private boolean mKeyPressed = false;
 
     /**
@@ -105,11 +117,15 @@ public class SoftKeyboardView extends View {
      */
     private boolean mMovingNeverHidePopupBalloon = false;
 
-    /** Vibration for key press. */
+    /**
+     * Vibration for key press.
+     */
     private Vibrator mVibrator;
 
-    /** Vibration pattern for key press. */
-    protected long[] mVibratePattern = new long[] {1, 20};
+    /**
+     * Vibration pattern for key press.
+     */
+    protected long[] mVibratePattern = new long[]{1, 20};
 
     /**
      * The dirty rectangle used to mark the area to re-draw during key press and
@@ -152,7 +168,7 @@ public class SoftKeyboardView extends View {
     }
 
     public void setBalloonHint(BalloonHint balloonOnKey,
-            BalloonHint balloonPopup, boolean movingNeverHidePopup) {
+                               BalloonHint balloonPopup, boolean movingNeverHidePopup) {
         mBalloonOnKey = balloonOnKey;
         mBalloonPopup = balloonPopup;
         mMovingNeverHidePopupBalloon = movingNeverHidePopup;
@@ -177,7 +193,7 @@ public class SoftKeyboardView extends View {
     }
 
     private void showBalloon(BalloonHint balloon, int balloonLocationToSkb[],
-            boolean movePress) {
+                             boolean movePress) {
         long delay = BalloonHint.TIME_DELAY_SHOW;
         if (movePress) delay = 0;
         if (balloon.needForceDismiss()) {
@@ -211,19 +227,21 @@ public class SoftKeyboardView extends View {
         mBalloonPopup.delayedDismiss(balloonDelay);
     }
 
+
     // If movePress is true, means that this function is called because user
     // moves his finger to this button. If movePress is false, means that this
     // function is called when user just presses this key.
     public SoftKey onKeyPress(int x, int y,
-            SkbContainer.LongPressTimer longPressTimer, boolean movePress) {
+                              SkbContainer.LongPressTimer longPressTimer, boolean movePress) {
+        Log.d(TAG, "onKeyPress: 按下事件处理.........");
         mKeyPressed = false;
         boolean moveWithinPreviousKey = false;
         if (movePress) {
-            SoftKey newKey = mSoftKeyboard.mapToKey(x, y);
+            SoftKey newKey = mSoftKeyboard.mapToKey(x, y);//传给 x y 坐标值，匹配出 所对应的键。
             if (newKey == mSoftKeyDown) moveWithinPreviousKey = true;
             mSoftKeyDown = newKey;
         } else {
-            mSoftKeyDown = mSoftKeyboard.mapToKey(x, y);
+            mSoftKeyDown = mSoftKeyboard.mapToKey(x, y);//计算出对应的键
         }
         if (moveWithinPreviousKey || null == mSoftKeyDown) return mSoftKeyDown;
         mKeyPressed = true;
@@ -276,7 +294,7 @@ public class SoftKeyboardView extends View {
                     + (mSoftKeyDown.mBottom - keyYMargin)
                     - mBalloonOnKey.getHeight();
             mHintLocationToSkbContainer[1] += mOffsetToSkbContainer[1];
-            showBalloon(mBalloonOnKey, mHintLocationToSkbContainer, movePress);
+            showBalloon(mBalloonOnKey, mHintLocationToSkbContainer, movePress);//点击按键后，显示气泡效果
         } else {
             mDirtyRect.union(mSoftKeyDown.mLeft, mSoftKeyDown.mTop,
                     mSoftKeyDown.mRight, mSoftKeyDown.mBottom);
@@ -311,7 +329,7 @@ public class SoftKeyboardView extends View {
             mHintLocationToSkbContainer[1] = mPaddingTop + mSoftKeyDown.mTop
                     - mBalloonPopup.getHeight();
             mHintLocationToSkbContainer[1] += mOffsetToSkbContainer[1];
-            showBalloon(mBalloonPopup, mHintLocationToSkbContainer, movePress);
+            showBalloon(mBalloonPopup, mHintLocationToSkbContainer, movePress);//点击按键后，显示气泡效果
         } else {
             mBalloonPopup.delayedDismiss(0);
         }
@@ -321,6 +339,8 @@ public class SoftKeyboardView extends View {
     }
 
     public SoftKey onKeyRelease(int x, int y) {
+
+        Log.d(TAG, "onKeyRelease: 松开按键处理。。。。。。。。。");
         mKeyPressed = false;
         if (null == mSoftKeyDown) return null;
 
@@ -345,6 +365,7 @@ public class SoftKeyboardView extends View {
     }
 
     public SoftKey onKeyMove(int x, int y) {
+        Log.d(TAG, "onKeyMove: 按键移动处理........");
         if (null == mSoftKeyDown) return null;
 
         if (mSoftKeyDown.moveWithinKey(x - mPaddingLeft, y - mPaddingTop)) {
@@ -385,7 +406,7 @@ public class SoftKeyboardView extends View {
             return;
         }
         if (mVibrator == null) {
-            mVibrator = (Vibrator)getContext().getSystemService(Context.VIBRATOR_SERVICE);
+            mVibrator = (Vibrator) getContext().getSystemService(Context.VIBRATOR_SERVICE);
         }
         mVibrator.vibrate(mVibratePattern, -1);
     }
@@ -422,9 +443,11 @@ public class SoftKeyboardView extends View {
             for (int i = 0; i < keyNum; i++) {
                 SoftKey softKey = softKeys.get(i);
                 if (SoftKeyType.KEYTYPE_ID_NORMAL_KEY == softKey.mKeyType.mKeyTypeId) {
-                    mPaint.setTextSize(mNormalKeyTextSize);
+//                    mPaint.setTextSize(mNormalKeyTextSize);
+                    mPaint.setTextSize(30f);
                 } else {
-                    mPaint.setTextSize(mFunctionKeyTextSize);
+//                    mPaint.setTextSize(mFunctionKeyTextSize);
+                    mPaint.setTextSize(30f);
                 }
                 drawSoftKey(canvas, softKey, keyXMargin, keyYMargin);
             }
@@ -439,7 +462,7 @@ public class SoftKeyboardView extends View {
     }
 
     private void drawSoftKey(Canvas canvas, SoftKey softKey, int keyXMargin,
-            int keyYMargin) {
+                             int keyYMargin) {
         Drawable bg;
         int textColor;
         if (mKeyPressed && softKey == mSoftKeyDown) {

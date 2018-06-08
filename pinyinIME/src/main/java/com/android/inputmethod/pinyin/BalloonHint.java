@@ -23,6 +23,7 @@ import android.graphics.Rect;
 import android.graphics.Paint.FontMetricsInt;
 import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
+import android.inputmethodservice.Keyboard;
 import android.os.Handler;
 import android.view.Gravity;
 import android.view.View;
@@ -36,6 +37,7 @@ import android.widget.PopupWindow;
 
 //用户点击键盘后，弹出的气泡。用来显示点击效果。
 public class BalloonHint extends PopupWindow {
+
     /**
      * Delayed time to show the balloon hint.
      */

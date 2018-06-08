@@ -1,35 +1,28 @@
 package com.hisense.pinyin;
 
 import android.app.Activity;
+import android.os.Build;
 import android.os.Bundle;
+import android.os.Environment;
+import android.support.v4.os.EnvironmentCompat;
+import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
+
+import java.io.File;
+import java.lang.reflect.Array;
+import java.util.ArrayList;
 
 public class MainActivity extends Activity {
 
-    EditText edittext1;
-    PopupKeyboardUtil smallKeyboardUtil;
-    private View viewContainer;
+    private static final String TAG = "MainActivity";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
-        String.format(getString(R.string.app_text),3,1986);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-//        edittext1 = findViewById(R.id.edit_text1);
-
-        smallKeyboardUtil = new PopupKeyboardUtil(this);
-//        smallKeyboardUtil.attachTo(edittext1, false);
-        //smallKeyboardUtil.setAutoShowOnFocs(false);
     }
 
-    public void onClickView(View view) {
-        if (view.getId() == R.id.btn1)
-            smallKeyboardUtil.showSoftKeyboard();
-        if (view.getId() == R.id.btn2)
-            smallKeyboardUtil.hideSoftKeyboard();
-
-    }
 }
